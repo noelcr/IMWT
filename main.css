@@ -31,6 +31,7 @@ div#col4{
 	margin-left: 50%;
 	margin-right: 30%;
 	text-align: center;
+	
 }
 div#col5{
 	float: right;
@@ -123,7 +124,6 @@ hr {
 #firstrow
 {
 height: auto;
-width: px;
 float: left;
 padding-left: 130px;
 padding-top: 50px;
@@ -133,7 +133,6 @@ padding-right: 20px;
 #secondrow
 {
 height: auto;
-width: px;
 float: left;
 padding-left: 130px;
 padding-top: 50px;
