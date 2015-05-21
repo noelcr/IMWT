@@ -4,23 +4,26 @@ a{
 }
 #aboutus01{
 	float: left;
-	margin-left: 15%;
-	margin-right: 15%;
+}
+#bodywrapper{
+	float: left;
+	position: absolute;
+	display: block;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	min-height: 100%;
 }
 #contactus01{
 	float: left;
 	margin: 10px 0 0 0;
-	width: 50%;
-	margin-left:12.5%;
-	margin-right:25px;
-	margin-button:50px;
+	width: auto;
+	margin-right: 25px;
+	margin-button: 50px;
 }
 #contactus02{
-	float: left;
 	margin: 10px 0 0 0;
 	width: 20%;
 	margin-left: 25px;
-	margin-right:12.5%;
 	margin-botton:50px;
 }
 #footer{
@@ -34,37 +37,10 @@ a{
 	margin-bottom: 0px;
 }
 #footercontainer{
-	float: center;
 	margin-left: 30%;
 	margin-right: 30%;
 }
-#footerlinks {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-left: -200px;
-	margin-bottom: 0px;
-	float: left;
-	display: block;
-	text-align: center;
-	width: 100px;
-	padding: 12px;
-}
-
-#footerlinks2 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	margin-top: auto;
-	margin-right: auto;
-	margin-left: -80px;
-	margin-bottom: auto;
-	float: left;
-	display: block;
-	text-align: center;
-	width: 100px;
-	padding: 12px;
-}
-
-#footerlinks3 {
+#footerlinks01 {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	margin: auto;
 	float: left;
@@ -74,7 +50,7 @@ a{
 	padding: 12px;
 }
 
-#footerlinks4 {
+#footerlinks02 {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	margin: auto;
 	float: left;
@@ -84,7 +60,7 @@ a{
 	padding: 12px;
 }
 
-#footerlinks5 {
+#footerlinks03 {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	margin: auto;
 	float: left;
@@ -94,7 +70,27 @@ a{
 	padding: 12px;
 }
 
-#footerlinks6 {
+#footerlinks04 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin: auto;
+	float: left;
+	display: block;
+	text-align: center;
+	width: 100px;
+	padding: 12px;
+}
+
+#footerlinks05 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin: auto;
+	float: left;
+	display: block;
+	text-align: center;
+	width: 100px;
+	padding: 12px;
+}
+
+#footerlinks06 {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	margin: auto;
 	float: left;
@@ -156,24 +152,26 @@ a{
 }
 #index01{
     float: left;
+	position: absolute;
+	display: block;
 	margin-left: 15%;
 	margin-right: 15%;
+	min-height: 100%;
 }
 #index02{
 	float: left;
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	display: block;
+	margin: 1.5%;
+    width: 350px;
+	padding: 12px;
 }
 #sponsors01{
+	display: block;
     float: left;
-	width: 75%;
 	margin: 10px 0 0 0;
-	margin-left:12.5%;
-	margin-right:12.5%;
 }
 #sponsors02{
+	display: block;
 	float: left;
 	width: 20%;
 	margin: 10px 0 0 0;
