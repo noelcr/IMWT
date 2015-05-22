@@ -121,7 +121,6 @@ a{
 #header01{
 	float: left;
 	margin: 10px 0 0 0;
-	margin-left: 12.5%;
 }
 #header02{
 	float: center;
@@ -140,13 +139,11 @@ a{
     float:right;
     position: relative;
     top: -63px;
-    
-    
 }
 #header05{
 	float: right;
-	margin: -100px 0 0 10px;
-	margin-right: -75%
+	margin: -115px 0 0 10px;
+	margin-right: -100%
 }
 #index01{
     float: left;
