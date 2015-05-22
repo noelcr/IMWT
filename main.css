@@ -2,10 +2,13 @@ a{
 	text-decoration: none;
 	color: #F9F7F7;
 }
-#aboutus01{
+a#breadcrumbs{
+	color: #000000;
+}
+div#aboutus01{
 	float: left;
 }
-#bodywrapper{
+div#bodywrapper{
 	float: left;
 	position: absolute;
 	display: block;
@@ -13,14 +16,14 @@ a{
 	margin-right: 12.5%;
 	min-height: 100%;
 }
-#contactus01{
+div#contactus01{
 	float: left;
 	margin: 10px 0 0 0;
 	width: auto;
 	margin-right: 25px;
 	margin-button: 50px;
 }
-#contactus02{
+div#contactus02{
 	margin: 10px 0 0 0;
 	width: 20%;
 	margin-left: 25px;
@@ -160,6 +163,9 @@ a{
     width: 350px;
 	padding: 12px;
 }
+il#breadcrumps{
+
+}
 #sponsors01{
 	display: block;
     float: left;
@@ -169,6 +175,12 @@ a{
 	display: block;
 	float: left;
 	width: 20%;
+	margin: 10px 0 0 0;
+	margin: 24px;
+}
+#sponsors03{
+	float: left;
+	width: 80%;
 	margin: 10px 0 0 0;
 	margin-left: 24px;
 	margin-right: 24px;
@@ -182,9 +194,20 @@ h1{
 }
 hr{
     border: 0;
+    border-top: 2px solid #FFFFFF;
+}
+hr#black{
+    border: 0;
     border-top: 2px solid #000000;
 }
 p{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	margin-left: 24px;
+	margin-right: 24px;
+	font-size: 18px;
+	line-height: 2;
+}
+ul#breadcrumbs{
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	margin-left: 24px;
 	margin-right: 24px;
