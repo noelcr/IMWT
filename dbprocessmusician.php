@@ -15,89 +15,83 @@ if ($_REQUEST['submit'] == "X")
 */
 }
 ?>
-
-
-<!DOCTYPE html>
-<html lang="">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="main.css" rel="stylesheet" type="text/css">
+<title>Artists - TCMC</title>
 </head>
-
+<header>
+<div id="header">
+<div id="header01">
+<a href="index.html"><img src="images/tcmclogo.jpg" alt=""></a>
+</div>
+<div id="header02">
+<i> - “Promoting Local Music Culture In The Townsville Area” - </i>
+<div id="header03">
+Want Exclusive Discounts?
+<br>
+<br>
+<img src="images/memberbutton.jpg" alt=""> 
+</div>
+    
+<div id="header04">
+<img src="images/signinbutton.jpg" alt="">
+</div>
+    
+<div id="header05">
+<a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534"><img src="images/fblogo.jpg" alt=""></a>
+</div>
+</div>
+</header>
 <body>
-    <h1>Results</h1>
+<img src="images/artistsbanner.jpg" width="75%" alt="" img style="margin:0px auto;display:block">
+<div id="bodywrapper">
+<ul id="breadcrumbs">
+<il><a id="breadcrumbs" href="index.html">HOME</a></il>
+<il> > </il>
+<il><a id="breadcrumbs" href="artists.html">ABOUT US</a></il>
+<il> > </il>
+<il><a id="breadcrumbs" href="artists.html">ABOUT US</a></il>
+</ul>
+    <h1>Results</h1><br>
+<p><a href="artistlist.php">Return to Artists page</a></p>
 <?php
-/*
-PHP File uploading example for CP2010
-Lindsay Ward, 2014 (from various iterations over the years)
-
-Note: with image resizing using WideImage library (requires GD): http://wideimage.sourceforge.net/
-
-This script receives input from a form - with enctype="multipart/form-data" - 
-and a form element: <input type="file" name="imagefile" id="imagefile" />  
-
-As usual, this is a basic demonstration that you can customise to suit your design needs.
-*/
-
-// include the image library for resizing
-// NOTE: Dreamweaver will not give you code completion for this library, but PHPStorm will.
-//require("../wideimage/WideImage.php");
-
-// first just print the data we have for this image so you know what's available
-echo "<pre>";
 print_r($_FILES);
 echo "</pre>\n";
-
-// check to see if the image is valid
-// check MIME type (GIF or JPEG) and maximum upload size - see phpinfo() for the server's restriction
 if ((($_FILES["imagefile"]["type"] == "image/gif")
 || ($_FILES["imagefile"]["type"] == "image/jpeg")
 || ($_FILES["imagefile"]["type"] == "image/pjpeg"))
 && ($_FILES["imagefile"]["size"] < 2000000))
 {
-    // check for any error code in the data
 	if ($_FILES["imagefile"]["error"] > 0)
 	{
 		echo "Error Code: " . $_FILES["imagefile"]["error"] . "<br />";
 	}
 	else
 	{
-        // print some information again (in case you're interested in how even though the print_r() shows it above)
 		echo "<p>Upload: " . $_FILES["imagefile"]["name"] . "<br />\n";
 		echo "MIME Type: " . $_FILES["imagefile"]["type"] . "<br />\n";
 		echo "Size: " . round($_FILES["imagefile"]["size"] / 1024, 1) . " KB<br />\n";
-		// uploaded files are stored in a temporary location on the server until we move them (if we want to)
 		echo "Temp file: " . $_FILES["imagefile"]["tmp_name"] . "</p>\n";
-	
-		// check to see if a file with that name already exists in our destination directory
-		// you could rename the files so that this is not a concern (e.g. with a unique identify based on time or database details)
-		// so this is just for demonstration purposes
 		if (file_exists("images/" . $_FILES["imagefile"]["name"]))
 		{
 			echo $_FILES["imagefile"]["name"] . " already exists. \n";
 		}
 		else
 		{
-			// create a new unique filename using current time and existing filename
 			$newName = time() . $_FILES["imagefile"]["name"];
             $newFullName = "images/{$newName}";
-			// move the temporary file to the destination directory (images) and give it its new name
 			move_uploaded_file($_FILES["imagefile"]["tmp_name"], $newFullName);
-			// set the permission on the file
 			chmod($newFullName, 0644);
 			echo "Stored original as: $newFullName<br />\n";
-			// at this point, we could save the filename to a database if we wanted to...
             $size = getimagesize($newFullName);
             echo "<img src=\"$newFullName\" " . $size[3] . " /><br />\n";
-			
-			// NOW, create a separate thumbnail from original image, if selected in form
             if (isset($_REQUEST['thumbnailChoice']))
             {
-                // demo of the {} syntax as well...
                 $image = WideImage::load($newFullName);
-                // resize maintains aspect ratio, so the new image will fit within the rectangle defined by the parameters
-                // you might like to use a constant for this size
                 $thumbnailImage = $image->resize(200, 200);
                 $thumbFullName = "images/thumb{$newName}";
                 $thumbnailImage->saveToFile($thumbFullName);
@@ -110,17 +104,14 @@ if ((($_FILES["imagefile"]["type"] == "image/gif")
 }
 else
 {
-	// generic error if initial test failed
-	// you would turn this into more appropriate and user-friendly error messages
 	echo "Invalid file";
 }
 ?>
 <?php
 echo "<h2>Form Data</h2>";
 echo "<pre>";
-print_r($_REQUEST); // a useful debugging function to see everything in an array, best inside a <pre> element
+print_r($_REQUEST);
 echo "</pre>";
-// execute the appropriate query based on which submit button (insert, delete or update) was clicked
 if ($_REQUEST['submit'] == "Insert Entry")
 {
 	$sql = "INSERT INTO musicians (name, description, file, instrument, genre, feature) VALUES ('$_REQUEST[name]', '$_REQUEST[info]', '$thumbFullName', '$_REQUEST[instrument]', '$_REQUEST[genre]', '$_REQUEST[feature]')";
@@ -128,7 +119,7 @@ if ($_REQUEST['submit'] == "Insert Entry")
 	if ($dbh->exec($sql))
 		echo "Inserted $_REQUEST[name]";
 	else
-		echo "Not inserted"; // in case it didn't work - e.g. if database is not writeable
+		echo "Not inserted";
 }
 else if ($_REQUEST['submit'] == "Delete Entry")
 {
@@ -153,8 +144,6 @@ else {
 }
 echo "</strong></p>\n";
 
-// Basic select and display all contents from table 
-
 echo "<h2>Musicians in Database Now</h2>\n";
 $sql = "SELECT * FROM musicians";
 $result = $dbh->query($sql);
@@ -162,14 +151,6 @@ $resultCopy = $result;
 
 if ($debugOn) {
 	echo "<pre>";	
-// one row at a time:
-/*	$row = $result->fetch(PDO::FETCH_ASSOC);
-	print_r($row);
-	echo "<br />\n";
-	$row = $result->fetch(PDO::FETCH_ASSOC);
-	print_r($row);
-*/
-// all rows in one associative array
 	$rows = $result->fetchall(PDO::FETCH_ASSOC);
 	echo count($rows) . " musicians in table<br />\n";
 	print_r($rows);
@@ -180,10 +161,54 @@ foreach ($dbh->query($sql) as $row)
 {
 	print $row[name] . "<br />\n";
 }
-
-// close the database connection 
 $dbh = null;
 ?>
-<p><a href="artistlist.php">Return to Artists page</a></p>
+</div>
 </body>
+<footer>
+<div id= "footer">
+<div id="footercontainer">
+<div id="footerlinks01">
+<a href="artists.html"><b>ARTISTS</b></a>
+<hr>
+<a href="">SEARCH</a>
+<a href="">LATEST</a>
+<a href="">GENRES</a>
+<a href="">NAMES A-Z</a></p>
+</div>
+<div id="footerlinks02">
+<a href="events.html"><b>EVENTS</b></a>
+<hr>
+<a href="">ALL</a>
+<a href="">LATEST</a>
+</div>
+<div id="footerlinks03">
+<a href="bulletin"><b>BULLETIN</b></a>
+<hr>
+<a href="">JOB OFFERS</a>
+<a href="">TUTORING</a>
+<a href="">EXPRESSION</a>
+</div>
+<div id="footerlinks04">
+<a href="sponsors.html"><b>SPONSORS</b></a>
+<hr>
+<a href="sponsors.html">LIST</a>
+</div>
+<div id="footerlinks05">
+<a href="contactus.html"><b>CONTACT US</b></a>
+<hr>
+<a href="">E-MAIL</a>
+<a href="">PHONE</a>
+<a href="">POSTAL</a>
+<a href="">ADDRESS</a>
+</div>
+<div id="footerlinks06">
+<a href=""><b>ABOUT US</b></a>
+<hr>
+<a href="">HISTORY</a>
+<a href="">TIMELINE</a>
+</div>
+</div>
+</div>
+</footer>
 </html>
