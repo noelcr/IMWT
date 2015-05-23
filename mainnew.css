@@ -2,15 +2,22 @@
 /* CSS Document */
 
 body {
-    background-image:
-	width: 0px
-	width: 0px;
+	height: 100%;
+	width: 100%;
+	background: url(images/background2.jpg) no-repeat fixed 100%;
+
 }
 
 hr {
 	border: 0;
 	border-top: 2px solid #FFFFFF;
 	width: 100px;
+}
+
+i {
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   color: white;
+	
 }
 
 #header{
@@ -25,7 +32,7 @@ hr {
 }
 
 #header3{
-	width: 170px;
+	width: 200px;
 	height: 20px;
 	
 }
@@ -53,6 +60,7 @@ hr {
 
 #footer {
 	padding-top: 20px;
+	clear: both;
 }
 
 #footer-menu {
