@@ -78,7 +78,7 @@ body {
 	padding-left: 5px;
 }
 
-#boxcontent hr {
+#boxcontent hr,#bodycontent hr {
 	position: absolute;
 	width: 1222px;
 	height: 7px;
@@ -94,6 +94,15 @@ body {
 	width: 389px;
 	padding-left: 10px;
 	padding-right: 5px;
+}
+
+#bodycontent {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 800px;
+	padding-top: 20px;
+	padding-left: 5px;
 }
 
 #footer {
