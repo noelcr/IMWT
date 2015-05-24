@@ -96,6 +96,14 @@ body {
 	padding-right: 5px;
 }
 
+#content {
+	float: left;
+	padding-left: 10px;
+	padding-right: 5px;
+	width: 169px;
+	height: 456px;
+}
+
 #bodycontent {
 	width: 1217px;
 	margin: 0 auto;
