@@ -22,13 +22,39 @@ body {
 	text-align: center;
 }
 
+#tcmclogo,#memberbutton,#loginbutton,#fblogo,#tagline1,#tagline2 {
+	float: left;	
+}
+
+#tcmclogo {
+	margin-left: 80px;
+}
+
+#memberbutton {
+	margin-left: 72px;
+	margin-top: 120px;
+}
+
+#loginbutton {
+	margin-left: 110px;
+	margin-top: 120px;
+}
+
+#fblogo {
+	margin-left: 55px;
+	margin-top: -16px;
+}
+
 #tagline1 {
 	width: 300px;
+	margin-top: -50px;
 }
 
 #tagline2 {
 	width: 200px;
 	height: 20px;
+	margin-left: 350px;
+	margin-top: -85px;
 }
 
 #headercolor {
