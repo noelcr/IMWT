@@ -17,6 +17,15 @@ body {
 	text-align: center;
 }
 
+#tagline1 {
+	width: 300px;
+}
+
+#tagline2 {
+	width: 200px;
+	height: 20px;
+}
+
 #headercolor {
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -27,15 +36,6 @@ body {
 #header i {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: white;
-}
-
-#header2{
-	width: 300px;
-}
-
-#header3{
-	width: 200px;
-	height: 20px;
 }
 
 #boxcontent {
@@ -93,17 +93,6 @@ body {
 	margin-right: 10px;
 	margin-left: 10px;
 	margin-bottom: 10px;
-}
-
-#footer #copyright {
-	font-size: 100%;
-	font-weight: bold;
-	border: none;
-	color: #777;
-}
-
-#footer #copyright a {
-	text-decoration: none;
 }
 
 #footer-sites {
@@ -164,4 +153,9 @@ body {
 
 #copyright {
 	font-size: 11px;
+	font-weight: bold;
+	border: none;
+	color: #777;
+	float: left;
+	padding-top: 38px;
 }
