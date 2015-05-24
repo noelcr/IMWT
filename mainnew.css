@@ -2,78 +2,82 @@
 /* CSS Document */
 
 body {
-	height: 100%;
-	width: 100%;
 	background: url(images/background2.jpg) no-repeat fixed 100%;
 
 }
-
-hr {
-	border: 0;
-	border-top: 2px solid #FFFFFF;
-	width: 100px;
-}
-
-i {
-   font-family: "Trebuchet MS", Helvetica, sans-serif;
-   color: white;
-	
-}
-
+   
 #header{
-	height: 200px;
 	width: 100%;
+	height: 200px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+#header i {
+	   font-family: "Trebuchet MS", Helvetica, sans-serif;
+       color: white;
 }
 
 #header2{
 	width: 300px;
-	padding-left: 0px;
-	float: none;
 }
 
 #header3{
 	width: 200px;
 	height: 20px;
-	
 }
 
 #wrapper {
 	width: 1197px;
-	height: 50px;
+	height: 180px;
 	margin: 0 auto;
 	text-align: center;
 }
 
 #boxcontent {
-	width: 1197px;
+	width: 1217px;
 	margin: 0 auto;
 	background-color: #353535;
-		
+	height: 700px;
+	padding-top: 20px;
+	padding-left: 5px;
 }
 
 #index {
 	float: left;
 	width: 389px;
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
 }
 
 #footer {
 	padding-top: 20px;
 	clear: both;
+	background-color: #353535;
 }
 
-#footer-menu {
-	margin-bottom: 1.5em;
-	line-height: 1.7em;
+.footerwrap {
+	width: 1217px;
+	padding: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	text-align: left;
+	box-sizing: content-box;
+	height: 250px;
+}
+
+#footer hr {
+	border: 0;
+	border-top: 2px solid #FFFFFF;
+	width: 165px;
 }
 
 #footer-menu a {
-	margin: 0;
-}
-
-.top-footer-links a {
-	margin: 0 .8em 0 0;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
 }
 
 #footer #copyright {
@@ -81,31 +85,19 @@ i {
 	font-weight: bold;
 	border: none;
 	color: #777;
-	padding: 0;
 }
 
 #footer #copyright a {
 	text-decoration: none;
 }
 
-#footer-flair {
-	margin: 0;
-	margin-top: -40px;
-	padding: 0;
-}
-
 #footer-sites {
 	clear: both;
-	width: 1000px;
-	margin-top: 1.5em;
-	margin-right: auto;
-	margin-bottom: 1.5em;
-	text-align: left;
+	width: 1217px;
+	margin-bottom: 30px;
 }
 
 #footer th,#footer td {
-	margin: 0;
-	width: 0px;
 	padding: 0 15px 0 0;
 	text-align: right;
 	text-transform: uppercase;
@@ -137,18 +129,6 @@ i {
 	text-align: left;
 }
 
-.footerwrap {
-	width: 900px;
-	padding: 15px;
-	margin-top: 50px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 0;
-	text-align: left;
-	box-sizing: content-box;
-	height: 250px;
-}
-
 #footer-sites a:link{
 	color: white;
 	text-decoration: none;	
@@ -163,24 +143,8 @@ i {
 	color: #6073BF;
 }
 
-#footer {
-	clear: both;
-	background-color: #353535;
-}
-
 #footer-menu {
 	float: left;
-}
-
-#footer-flair {
-	float: right;
-	text-align: right;
-}
-
-#footer-flair a {
-	display: inline-block;
-	vertical-align: top;
-	text-indent: -999999em;
 }
 
 #copyright {
