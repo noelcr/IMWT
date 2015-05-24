@@ -69,7 +69,7 @@ body {
     color: white;
 }
 
-#boxcontent {
+#boxcontent { /*for index.html only*/
 	width: 1217px;
 	margin: 0 auto;
 	background-color: #353535;
@@ -89,28 +89,40 @@ body {
 	border-width: 0px;
 }
 
-#index {
+#index { /*for index.html only*/
 	float: left;
 	width: 389px;
 	padding-left: 10px;
 	padding-right: 5px;
 }
 
-#content {
-	float: left;
-	padding-left: 10px;
-	padding-right: 5px;
-	width: 169px;
-	height: 456px;
-}
-
-#bodycontent {
+#bodycontent { /*for all except index.html*/
 	width: 1217px;
 	margin: 0 auto;
 	background-color: #353535;
 	height: 800px;
-	padding-top: 20px;
-	padding-left: 5px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#content { /*for all except index.html*/
+	float: left;
+	width: 1181px;
+	height: 770px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+a#breadcrumbs,il {
+	color: #FFFFFF;
+}
+
+ul#breadcrumbs {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 2;
+    list-style-type: none;
 }
 
 #footer {
