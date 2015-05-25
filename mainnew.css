@@ -337,10 +337,12 @@ img#sponsors1{
 	margin-right: 50px;
 	height: 150px; 
 	width: 150px;
+	float: left;
 }
 img#sponsors2{
 	 height: 150; 
 	 width: 250;
+	 float: left;
 }
 ol {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
