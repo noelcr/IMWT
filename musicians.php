@@ -6,7 +6,7 @@ include("dbconnect.php");
 <head>
 <meta charset="utf-8">
 <link href="mainnew.css" rel="stylesheet" type="text/css">
-<title>ABOUT US - Townsville Community Music Centre</title> 
+<title>ARTIST - Townsville Community Music Centre</title> 
 </head>
  <body>
   <div id="header">
@@ -35,16 +35,17 @@ include("dbconnect.php");
     </div>   
     </div> 
    </div> <!-- end of header div -->
-  <div id="bodycontentAU">
-   <div id="contentAU">
-   <img src="images/artists.png" alt="" height="150" width="1058">
+  <div id="bodycontentART">
+   <div id="contentART">
+   <img id="banner" src="images/artistsbanner.png" alt="">
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="index.html">HOME</a></il>
    <il> > </il>
-   <il><a id="breadcrumbs" href="contactus.html">ABOUT US</a><il>
+   <il><a id="breadcrumbs" href="artistlist.html">ARTIST</a><il>
+   <il> > </il>
+   <il><a id="breadcrumbs" href="musicians.php">REGISTER</a><il>
    </ul>
     <h1>Register Your Act!!!</h1>
-    
     <form id="insert" name="insert" method="post" action="dbprocessmusician.php" enctype="multipart/form-data">
     <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
 
@@ -56,11 +57,11 @@ include("dbconnect.php");
             <td><input type="text" name="name" id="name"></td>
         </tr>
         <tr>   
-            <td><label for="description">Description: </label></td>
+            <td><label for="description">Description:  </label></td>
             <td><textarea type="text" name="info" id="info"></textarea></td>
         </tr>
         <tr>  
-            <td><label for="file">Image:</label></td>
+            <td><label for="file">Image: </label></td>
             <td><input type="file" name="imagefile" id="imagefile"/></td>
             <td>    <input type="checkbox" name="thumbnailChoice" id="thumbnailChoice" checked="checked">
     <label for="thumbnailChoice">Create Thumbnail?</label></td>
@@ -74,12 +75,12 @@ include("dbconnect.php");
             <td><input type="text" name="genre" id="genre"></td>
         </tr>
         <tr>
-            <td><label for='feature'>Feature this artist</label></td>
+            <td><label for='feature'>Feature this artist </label></td>
             <td><input type="radio" name="feature" value="Featured">Featured<br>
                 <input type="radio" name="feature" value="Not_Featured">Not Featured</td>
         </tr>
        <tr> 
-            <td><input type="submit" name="submit" id="submit" value="Insert Entry"></td>
+            <td><input type="submit" name="submit" id="submit" value="REGISTER"></td>
         </tr>
 </table>
 </fieldset>

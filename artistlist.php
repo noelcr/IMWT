@@ -6,7 +6,7 @@ include("dbconnect.php");
 <head>
 <meta charset="utf-8">
 <link href="mainnew.css" rel="stylesheet" type="text/css">
-<title>ABOUT US - Townsville Community Music Centre</title> 
+<title>ARTIST - Townsville Community Music Centre</title> 
 </head>
  <body>
   <div id="header">
@@ -37,11 +37,11 @@ include("dbconnect.php");
    </div> <!-- end of header div -->
   <div id="bodycontentAU">
    <div id="contentAU">
-   <img src="images/artistsbanner.png" alt="" height="150" width="1058">
+   <img id="banner" src="images/artistsbanner.png" alt="">
    <ul id="breadcrumbs">
-   <il><a id="breadcrumbs" href="index.html">HOME</a></il>
+   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
    <il> > </il>
-   <il><a id="breadcrumbs" href="contactus.html">ABOUT US</a><il>
+   <il><a id="breadcrumbs" href="artistlist.html">ARTISTS</a><il>
    </ul>
 <?php
 echo "<table>";
