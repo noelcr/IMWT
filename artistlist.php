@@ -2,44 +2,47 @@
 include("dbconnect.php");
 ?>
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="main.css" rel="stylesheet" type="text/css">
-<title>Artists - TCMC</title>
+<link href="mainnew.css" rel="stylesheet" type="text/css">
+<title>ABOUT US - Townsville Community Music Centre</title> 
 </head>
-<header>
-<div id="header">
-<div id="header01">
-<a href="index.html"><img src="images/tcmclogo.jpg" alt=""></a>
-</div>
-<div id="header02">
-<i> - “Promoting Local Music Culture In The Townsville Area” - </i>
-<div id="header03">
-Want Exclusive Discounts?
-<br>
-<br>
-<img src="images/memberbutton.jpg" alt=""> 
-</div>
-    
-<div id="header04">
-<img src="images/signinbutton.jpg" alt="">
-</div>
-    
-<div id="header05">
-<a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534"><img src="images/fblogo.jpg" alt=""></a>
-</div>
-</div>
-</header>
-<body>
-<img src="images/artistsbanner.jpg" width="75%" alt="" img style="margin:0px auto;display:block">
-<div id="bodywrapper">
-<ul id="breadcrumbs">
-<il><a id="breadcrumbs" href="index.html">HOME</a></il>
-<il> > </il>
-<il><a id="breadcrumbs" href="artists.html">ARTISTS</a></il>
-</ul>
+ <body>
+  <div id="header">
+   <div id="headercolor">
+    <div id="wrapper">
+	  <div id="tcmclogo">
+       <a href="indexnew.html" title="Home">
+        <img src="images/tcmclogo.jpg" alt="The TCMC logo" height="100" width="150"></a>
+      </div>
+      <div id="memberbutton" title="Membership signup">
+	   <img src="images/memberbutton.png" alt="Membership signup" height="55" width="300">
+      </div>
+      <div id="loginbutton" title="Current members">
+       <img src="images/signinbutton.png" alt="To login page" height="55" width="300">
+      </div>
+      <div id="fblogo" title="TCMC Facebook">
+       <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534">
+        <img src="images/fblogo.png" alt="TCMC Facebook page" height="106" width="106"></a>
+      </div>
+	<div id="tagline1">
+     <i>- “Promoting Local Music Culture<br> In The Townsville Area” -</i>
+    </div>
+    <div id="tagline2">
+	 <i>Want Exclusive Discounts?</i>
+    </div>
+    </div>   
+    </div> 
+   </div> <!-- end of header div -->
+  <div id="bodycontentAU">
+   <div id="contentAU">
+   <img src="images/artistsbanner.png" alt="" height="150" width="1058">
+   <ul id="breadcrumbs">
+   <il><a id="breadcrumbs" href="index.html">HOME</a></il>
+   <il> > </il>
+   <il><a id="breadcrumbs" href="contactus.html">ABOUT US</a><il>
+   </ul>
 <?php
 echo "<table>";
 $sql = "SELECT * FROM musicians";
