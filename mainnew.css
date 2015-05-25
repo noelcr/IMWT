@@ -78,7 +78,7 @@ body {
 	padding-left: 5px;
 }
 
-#boxcontent hr,#bodycontent hr {
+#boxcontent hr,#bodycontent hr,#bodycontentCU hr {
 	position: absolute;
 	width: 1222px;
 	height: 7px;
@@ -96,7 +96,7 @@ body {
 	padding-right: 5px;
 }
 
-#bodycontent { /*for all except index.html*/
+#bodycontentART {
 	width: 1217px;
 	margin: 0 auto;
 	background-color: #353535;
@@ -105,7 +105,97 @@ body {
 	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
 }
 
-#content { /*for all except index.html*/
+#contentART {
+	float: left;
+	width: 1181px;
+	height: 770px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#bodycontentEVNT {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 800px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#contentEVNT {
+	float: left;
+	width: 1181px;
+	height: 770px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#bodycontentBB {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 800px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#contentBB {
+	float: left;
+	width: 1181px;
+	height: 770px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#bodycontentSPO {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 800px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#contentSPO {
+	float: left;
+	width: 1181px;
+	height: 770px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#bodycontentCU {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 800px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#contentCU {
+	float: left;
+	width: 1181px;
+	height: 770px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#bodycontentAU {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 800px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#contentAU {
 	float: left;
 	width: 1181px;
 	height: 770px;
