@@ -332,6 +332,11 @@ img#banner{
 	 width: 1164px;
 	
 }
+img#indexbutton{
+	height=: 344px; 
+	width=: 391px;
+	
+}
 img#sponsors1{
 	margin-left: 50px;
 	margin-right: 50px;
@@ -340,8 +345,8 @@ img#sponsors1{
 	float: left;
 }
 img#sponsors2{
-	 height: 150; 
-	 width: 250;
+	 height: 150px; 
+	 width: 250px;
 	 float: left;
 }
 ol {
