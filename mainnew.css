@@ -224,6 +224,7 @@ ul#breadcrumbs {
 	font-size: 18px;
 	line-height: 2;
     list-style-type: none;
+	padding: 0;
 }
 
 #footer {
@@ -321,4 +322,17 @@ ul#breadcrumbs {
 	color: #777;
 	float: left;
 	padding-top: 38px;
+}
+ol {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 2;
+	list-style-type: none;
+	padding: 0;
+	color: #FFFFFF;
+}
+p{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
 }
