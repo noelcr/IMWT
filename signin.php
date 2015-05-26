@@ -1,3 +1,6 @@
+﻿<?php session_start(); 
+error_reporting(E_ALL);
+?>
 <!doctype html>
 <html>
 <head>
@@ -48,7 +51,13 @@
    <il> > </il>
    <il><a id="breadcrumbs" href="signin.php">SIGN IN</a><il>
    </ul>
-<form action="dbprocesssignin.php" method="POST">
+<?php 
+if (isset($_SESSION['msg'])) {
+	echo "<p style='color:red'>".$_SESSION['msg']."</p>"; 
+}
+if (!isset($_SESSION['username'])) {
+?>
+<form id="login" name="login" method="post" action="secure.php">
     <table>
         <tr> 
             <td><label for="username">Username: </label></td>
@@ -58,9 +67,21 @@
             <td><label for="password">Password: </label></td>
             <td><input type="text" name="password" id="password"></td>
         </tr>
+        <tr>
+        <td><input type="submit" value="Sign-In"/></td>
+        </tr>
      </table>
-<input type="submit" value="Sign-In"/>
 </form>
+    <?php } ?>
+<pre>
+<?php
+print_r($_SESSION); 
+?>
+</pre>
+<nav><a href="secure.php">Secure Page</a>
+    <?php if (isset($_SESSION['username'])) echo '<a href="logout.php">Logout</a>';
+?>    
+</nav>
 </div>
 <hr><!-- do not delete -->
 </div><!-- end of bodycontent div -->
