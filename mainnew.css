@@ -78,12 +78,45 @@ div#boxcontent { /*for index.html only*/
 	padding-left: 5px;
 }
 
-#boxcontent hr,#bodycontent hr,#bodycontentCU hr,#bodycontentAU hr, {
+div#bodycontent hr,div#bodycontentAU hr, {
 	position: absolute;
 	width: 1222px;
 	height: 7px;
 	margin-left: -5px;
 	margin-top: 793px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
+div#boxcontent hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 793px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
+div#bodycontentAU hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 1593px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
+div#bodycontentCU hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 843px;
 	background-color: #FF6E00;
 	border-color: #FF6E00;
 	border-width: 0px;

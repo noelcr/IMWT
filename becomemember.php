@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <link href="mainnew.css" rel="stylesheet" type="text/css">
-<title>Townsville Music Community Centre</title> 
+<title>BECOME A MEMBER - Townsville Community Music Centre</title>
 </head>
- <body>
-  <div id="header">
+
+<body>
+<div id="header">
    <div id="headercolor">
     <div id="wrapper">
 	  <div id="tcmclogo">
@@ -32,31 +33,21 @@
     </div>   
     </div> 
    </div> <!-- end of header div -->
-  <div id="bodycontentCU">
-   <div id="contentCU">
-    <img id="banner" src="images/contactusbanner.png" alt="">
-    <ul id="breadcrumbs">
-	 <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
-	 <il> > </il>
-	 <il><a id="breadcrumbs" href="contactusnew.html">CONTACT US</a><il>
-	</ul>
-    <p>If you have any direct queries, feel free to contact us.</p>
-    <ol>
-     <li><b>OFFICE HOURS:</b> Monday - Wednesday: 9:30 AM - 2:30 PM</li>
-     <li><b>PHONE NUMBER (OFFICE HOURS):</b> 07 4724 2086</li>
-     <li><b>MOBILE NUMBER (NON-OFFICE HOURS):</b> 0402 255 182</li>
-     <li><b>ADDRESS:</b> Townsville Civic Theatre, Level 2, 41 Boundary Street, Townsville, Qld 4810</li>     
-     <li><b>POSTAL ADDRESS:</b> PO Box 1006, Townsville, Qld 4810</li>
-     <li><b>E-MAIL ADDRESS:</b> admin@townsvillemusic.org.au</li>
-    </ol>
-    <img src="images/civicfront500.jpg" alt="Picture of the Civic Theatre, home of the TCMC" height="283" width="500">
+<div id="bodycontentSPO">
+   <div id="contentSPO">
+   <img id="banner" src="images/becomememberbanner.png" alt="">
+   <ul id="breadcrumbs">
+   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
+   <il> > </il>
+   <il><a id="breadcrumbs" href="becomemember.php">BECOME A MEMBER</a><il>
+   </ul>
 </div>
 <hr><!-- do not delete -->
 </div><!-- end of bodycontent div -->
-   <div id="footer">
-        <div class="footerwrap">
-            <div id="footer-menu">
-   <div id= "footer-sites">
+<div id="footer">
+<div class="footerwrap">
+<div id="footer-menu">
+ <div id= "footer-sites">
     <table width="1218" height="176">
      <tr>
       <th width="176"><a href="artistsnew.html" title="All artists"><strong>ARTISTS</strong></a><hr>
@@ -109,7 +100,6 @@
         <li><a href="" title="">E-MAIL</a></li>
 	    <li><a href="" title="">PHONE</a></li>
 	    <li><a href="" title="">POSTAL</a></li>
-
 	    <li><a href="" title="">ADDRESS</a></li>
        </ol>
       </td>
@@ -128,5 +118,5 @@
    </div>
    </div> <!-- end of footerwrap div -->
    </div> <!-- end of footer div -->
-  </body>
+</body>
 </html>
