@@ -42,7 +42,7 @@ include("dbconnect.php");
    <div id="contentSPO">
    <img id="banner" src="images/artistsbanner.png" alt="">
    <ul id="breadcrumbs">
-   <il><a id="breadcrumbs" href="index.html">HOME</a></il>
+   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
    <il> > </il>
    <il><a id="breadcrumbs" href="artistlist.php">ARTIST</a><il>
    <il> > </il>
