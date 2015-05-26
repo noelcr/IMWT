@@ -46,7 +46,7 @@ include("dbconnect.php");
    <il> > </il>
    <il><a id="breadcrumbs" href="artistlist.php">ARTIST</a><il>
    <il> > </il>
-   <il><a id="breadcrumbs" href="musicians.php">REGISTER</a><il>
+   <il><a id="breadcrumbs" href="musicians.php">REGISTER YOUR ACT</a><il>
    </ul>
     <h1>REGISTER YOUR ACT!!!</h1>
     <form id="insert" name="insert" method="post" action="dbprocessmusician.php" enctype="multipart/form-data">

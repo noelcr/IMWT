@@ -52,7 +52,7 @@ require("authenticate.php");
    <il> > </il>
    <il><a id="breadcrumbs" href="eventslist.php">EVENTS</a><il>
    <il> > </il>
-   <il><a id="breadcrumbs" href="events.php">REGISTER YOUR EVENT!</a><il>
+   <il><a id="breadcrumbs" href="events.php">REGISTER YOUR EVENT</a><il>
    </ul>
     <h1>Events Database</h1>
     
