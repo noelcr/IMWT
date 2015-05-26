@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+a#breadcrumbs,il {
+	color: #FFFFFF;
+}
+
 body {
 	background: url(images/background2.jpg) no-repeat fixed 100%;
 }
@@ -16,18 +20,19 @@ div#header{
 }
 
 div#wrapper {
-	width: 1217px;
+	width: 1300px;
 	height: 180px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-#tcmclogo,#memberbutton,#loginbutton,#fblogo,#tagline1,#tagline2 {
+#tcmclogo,#memberbutton,#loginbutton,#fblogo,#tagline1,#tagline2,#tagline3 {
 	float: left;	
 }
 
 div#tcmclogo {
-	margin-left: 80px;
+	margin-top: 10px;
+	margin-left: 50px;
 }
 
 div#memberbutton {
@@ -42,18 +47,28 @@ div#loginbutton {
 
 div#fblogo {
 	margin-left: 55px;
-	margin-top: -16px;
+	margin-top: 25px;
 }
 
 div#tagline1 {
-	width: 300px;
-	margin-top: -50px;
+	width: 600px;
+	height: 20px;
+	margin-left: 400px;
+	margin-top: -150px;
+	font-size: 20px;
 }
 
 div#tagline2 {
 	width: 200px;
 	height: 20px;
-	margin-left: 350px;
+	margin-left: 410px;
+	margin-top: -85px;
+}
+
+div#tagline3 {
+	width: 200px;
+	height: 20px;
+	margin-left: 820px;
 	margin-top: -85px;
 }
 
@@ -248,11 +263,14 @@ div#contentAU {
 	padding-bottom: 10px;
 }
 
-a#breadcrumbs,il {
-	color: #FFFFFF;
+div#copyright {
+	font-size: 11px;
+	font-weight: bold;
+	border: none;
+	color: #777;
+	float: left;
+	padding-top: 38px;
 }
-
-
 
 div#footer {
 	padding-top: 20px;
@@ -342,14 +360,6 @@ div#footer-menu {
 	float: left;
 }
 
-div#copyright {
-	font-size: 11px;
-	font-weight: bold;
-	border: none;
-	color: #777;
-	float: left;
-	padding-top: 38px;
-}
 h1 {
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-size: 18px;

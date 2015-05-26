@@ -14,7 +14,7 @@ include("dbconnect.php");
     <div id="wrapper">
 	  <div id="tcmclogo">
        <a href="indexnew.html" title="Home">
-        <img src="images/tcmclogo.jpg" alt="The TCMC logo" height="100" width="150"></a>
+        <img src="images/tcmclogo.jpg" alt="The TCMC logo"></a>
       </div>
       <div id="memberbutton" title="Membership signup">
 	   <img src="images/memberbutton.png" alt="Membership signup" height="55" width="300">
@@ -27,10 +27,13 @@ include("dbconnect.php");
         <img src="images/fblogo.png" alt="TCMC Facebook page" height="106" width="106"></a>
       </div>
 	<div id="tagline1">
-     <i>- “Promoting Local Music Culture<br> In The Townsville Area” -</i>
+     <i>- “Promoting Local Music Culture In The Townsville Area” -</i>
     </div>
     <div id="tagline2">
 	 <i>Want Exclusive Discounts?</i>
+    </div>
+    <div id="tagline3">
+	 <i>Already A Member?</i>
     </div>
     </div>   
     </div> 
