@@ -408,6 +408,8 @@ p{
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	color: #FFFFFF;
+	word-wrap: break-word;
+	width: 1200px;
 }
 table {
 

@@ -1,11 +1,28 @@
+<?php
+include("dbconnect.php");
+include 'wideimage/WideImage.php';
+
+$debugOn = true;
+
+if ($_REQUEST['submit'] == "X")
+{
+	$sql = "DELETE FROM events WHERE id = '$_REQUEST[id]'";
+	if ($dbh->exec($sql))
+		header("Location: events.php"); // NOTE: This must be done before ANY html is output, which is why it's right at the top!
+/*	else
+		// set message to be printed on appropriate (results) page
+*/
+}
+?>
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="mainnew.css" rel="stylesheet" type="text/css">
-<title>Townsville Music Community Centre</title> 
+<title>Events - TCMC</title>
 </head>
- <body>
+<body>
   <div id="header">
    <div id="headercolor">
     <div id="wrapper">
@@ -39,29 +56,77 @@
     </div>   
     </div> 
    </div> <!-- end of header div -->
-  <div id="boxcontent">
-    <div id="index">
-	 <a href="artistlist.php" title="Artists"><img id="indexbutton" src="images/artistsbutton.png" alt="Browse the local talent"></a>
-	</div>
-	<div id="index">
-	 <a href="eventslist.php" title="Events"><img id="indexbutton" src="images/eventsbutton.png" alt="See upcoming events"></a>
-	</div>
-	<div id="index">
-	 <a href="bulletinboardnew.html" title="Bulletin Board"><img id="indexbutton" src="images/bulletinboardbutton.png" alt="Latest jobs, tutoring and more"></a>
-	</div>
-	<div id="index">
-	 <a href="sponsorsnew.html" title="Sponsors"><img id="indexbutton" src="images/sponsorsbutton.png" alt="View Our Sponsors"></a>
-	</div>
-	<div id="index">
-	 <a href="contactusnew.html" title="Contact Us"><img id="indexbutton" src="images/contactusbuttons.png" alt="Contact us here"></a>
-	</div>
-	<div id="index">
-	 <a href="aboutusnew.html" title="About Us"><img id="indexbutton" src="images/aboutusbutton.png" alt="The history of TCMC"></a>
-	</div>
-   <hr>
-  </div> 
-  <!-- end of boxcontent div -->
-   <div id="footer">
+<div id="bodycontentAU">
+   <div id="contentAU">
+   <img id="banner" src="images/eventsbanner.png" alt="">
+   <ul id="breadcrumbs">
+   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
+   <il> > </il>
+   <il><a id="breadcrumbs" href="eventslist.php">EVENTS</a><il>
+   </ul>
+    <h1>Results</h1><br>
+<p><a href="artistlist.php">Return to Artists page</a></p>
+<?php
+echo "<h2>Form Data</h2>";
+echo "<pre>";
+print_r($_REQUEST);
+echo "</pre>";
+if ($_REQUEST['submit'] == "Insert Entry")
+{
+	$sql = "INSERT INTO events (name, description, location, time) VALUES ('$_REQUEST[name]', '$_REQUEST[info]', '$_REQUEST[location]', '$_REQUEST[time]')";
+	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
+	if ($dbh->exec($sql))
+		echo "Inserted $_REQUEST[name]";
+	else
+		echo "Not inserted";
+}
+else if ($_REQUEST['submit'] == "Delete Entry")
+{
+	$sql = "DELETE FROM events WHERE id = '$_REQUEST[id]'";
+	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
+	if ($dbh->exec($sql))
+		echo "Deleted $_REQUEST[name]";
+	else
+		echo "Not deleted";
+}
+else if ($_REQUEST['submit'] == "Update Entry")
+{
+	$sql = "UPDATE events SET name = '$_REQUEST[name]', description = '$_REQUEST[description]', location = '$_REQUEST[location]', time = '$_REQUEST[time]' WHERE id = '$_REQUEST[id]'";
+	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
+	if ($dbh->exec($sql))
+		echo "Updated $_REQUEST[name]";
+	else
+		echo "Not updated";
+}
+else {
+	echo "This page did not come from a valid form submission.<br />\n";
+}
+echo "</strong></p>\n";
+
+echo "<h2>Events in Database Now</h2>\n";
+$sql = "SELECT * FROM events";
+$result = $dbh->query($sql);
+$resultCopy = $result;
+
+if ($debugOn) {
+	echo "<pre>";	
+	$rows = $result->fetchall(PDO::FETCH_ASSOC);
+	echo count($rows) . " Events in table<br />\n";
+	print_r($rows);
+	echo "</pre>";
+	echo "<br />\n";
+}
+foreach ($dbh->query($sql) as $row)
+{
+	print $row[name] . "<br />\n";
+}
+$dbh = null;
+?>
+</div>
+       </div>
+</div> <!-- end of boxcontent div -->
+<br>
+<div id="footer">
         <div class="footerwrap">
             <div id="footer-menu">
    <div id= "footer-sites">
@@ -135,5 +200,5 @@
    </div>
    </div> <!-- end of footerwrap div -->
    </div> <!-- end of footer div -->
-  </body>
+</body>
 </html>

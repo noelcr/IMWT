@@ -1,9 +1,12 @@
+<?php
+include("dbconnect.php");
+?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <link href="mainnew.css" rel="stylesheet" type="text/css">
-<title>Townsville Music Community Centre</title> 
+<title>Events - Townsville Community Music Centre</title> 
 </head>
  <body>
   <div id="header">
@@ -39,29 +42,40 @@
     </div>   
     </div> 
    </div> <!-- end of header div -->
-  <div id="boxcontent">
-    <div id="index">
-	 <a href="artistlist.php" title="Artists"><img id="indexbutton" src="images/artistsbutton.png" alt="Browse the local talent"></a>
-	</div>
-	<div id="index">
-	 <a href="eventslist.php" title="Events"><img id="indexbutton" src="images/eventsbutton.png" alt="See upcoming events"></a>
-	</div>
-	<div id="index">
-	 <a href="bulletinboardnew.html" title="Bulletin Board"><img id="indexbutton" src="images/bulletinboardbutton.png" alt="Latest jobs, tutoring and more"></a>
-	</div>
-	<div id="index">
-	 <a href="sponsorsnew.html" title="Sponsors"><img id="indexbutton" src="images/sponsorsbutton.png" alt="View Our Sponsors"></a>
-	</div>
-	<div id="index">
-	 <a href="contactusnew.html" title="Contact Us"><img id="indexbutton" src="images/contactusbuttons.png" alt="Contact us here"></a>
-	</div>
-	<div id="index">
-	 <a href="aboutusnew.html" title="About Us"><img id="indexbutton" src="images/aboutusbutton.png" alt="The history of TCMC"></a>
-	</div>
-   <hr>
-  </div> 
-  <!-- end of boxcontent div -->
-   <div id="footer">
+  <div id="bodycontentAU">
+   <div id="contentAU">
+   <img id="banner" src="images/eventsbanner.png" alt="">
+   <ul id="breadcrumbs">
+   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
+   <il> > </il>
+   <il><a id="breadcrumbs" href="eventslist.php">EVENTS</a><il>
+   </ul>
+<?php
+echo "<table>";
+$sql = "SELECT * FROM events";
+foreach ($dbh->query($sql) as $row)
+{
+?>
+<?php
+    echo "<tr>";
+        echo "<td><b>"; echo "<a href="; ?>"<?php echo "eventsDetail.php?id=$row[id]"; ?>"<?php echo ">"; echo $row[name];echo"</a>"; echo "</b></td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<td>"; echo "<p>"; echo $row[description]; echo "</p>"; echo "</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<td>"; echo "<p>"; echo $row[location]; echo "</p>"; echo "</td>";
+    echo "<td>"; echo "<p>"; echo $row[time]; echo "</p>"; echo "</td>";
+    echo "</tr>";
+}
+    echo "</table>"; 
+?>   
+<?php
+    echo "<a href="; ?>"<?php echo "events.php"; ?>"<?php echo ">Add/Edit Events</a>";                                  
+?> 
+</div>
+</div> <!-- end of boxcontent div -->
+<div id="footer">
         <div class="footerwrap">
             <div id="footer-menu">
    <div id= "footer-sites">
@@ -135,5 +149,5 @@
    </div>
    </div> <!-- end of footerwrap div -->
    </div> <!-- end of footer div -->
-  </body>
+</body>
 </html>
