@@ -48,6 +48,28 @@
    <il> > </il>
    <il><a id="breadcrumbs" href="becomemember.php">BECOME A MEMBER</a><il>
    </ul>
+<form action="dbprocessbecomemember.php" method="POST">
+    <table>
+        <tr> 
+            <td><label for="firstname">First Name:  </label></td>
+            <td><input type="text" name="firstname" id="firstname"></td>
+        </tr>
+        <tr> 
+            <td><label for="surname">Surname: </label></td>
+            <td><input type="text" name="surname" id="password"></td>
+        </tr>
+        <tr> 
+            <td><label for="username">Username: </label></td>
+            <td><input type="text" name="username" id="username"></td>
+        </tr>
+        <tr> 
+            <td><label for="password">Password: </label></td>
+            <td><input type="text" name="password" id="password"></td>
+        </tr>
+     </table>
+<br>
+<input type="submit" value="Sign Up"/>
+</form>
 </div>
 <hr><!-- do not delete -->
 </div><!-- end of bodycontent div -->
