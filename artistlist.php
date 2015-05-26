@@ -49,6 +49,7 @@ include("dbconnect.php");
    <il> > </il>
    <il><a id="breadcrumbs" href="artistlist.php">ARTISTS</a><il>
    </ul>
+<p><a id="registerlink" href="musicians.php">REGISTER YOUR ACT!</a></p>
 <?php
 echo "<table>";
 $sql = "SELECT * FROM musicians";
