@@ -58,7 +58,7 @@ foreach ($dbh->query($sql) as $row)
 ?>
 <?php
 echo "<h1>"; echo "$row[name]"; echo "<h1>";
-echo "<p> $row[locatio] </p>";
+echo "<p> $row[location] </p>";
 echo "<p> $row[time] </p>";
 echo "<p> $row[description] </p>";
 
