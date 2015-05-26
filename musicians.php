@@ -35,8 +35,8 @@ include("dbconnect.php");
     </div>   
     </div> 
    </div> <!-- end of header div -->
-  <div id="bodycontentART">
-   <div id="contentART">
+  <div id="bodycontentSPO">
+   <div id="contentSPO">
    <img id="banner" src="images/artistsbanner.png" alt="">
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="index.html">HOME</a></il>
