@@ -44,11 +44,11 @@ include("dbconnect.php");
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="index.html">HOME</a></il>
    <il> > </il>
-   <il><a id="breadcrumbs" href="artistlist.html">ARTIST</a><il>
+   <il><a id="breadcrumbs" href="artistlist.php">ARTIST</a><il>
    <il> > </il>
    <il><a id="breadcrumbs" href="musicians.php">REGISTER</a><il>
    </ul>
-    <h1>Register Your Act!!!</h1>
+    <h1>REGISTER YOUR ACT!!!</h1>
     <form id="insert" name="insert" method="post" action="dbprocessmusician.php" enctype="multipart/form-data">
     <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
 

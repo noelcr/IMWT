@@ -360,6 +360,10 @@ div#footer-menu {
 	float: left;
 }
 
+fieldset {
+    border: 0;
+}
+
 h1 {
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-size: 18px;
