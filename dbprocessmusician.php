@@ -23,30 +23,40 @@ if ($_REQUEST['submit'] == "X")
 <link href="main.css" rel="stylesheet" type="text/css">
 <title>Artists - TCMC</title>
 </head>
-<header>
-<div id="header">
-<div id="header01">
-<a href="index.html"><img src="images/tcmclogo.jpg" alt=""></a>
-</div>
-<div id="header02">
-<i> - “Promoting Local Music Culture In The Townsville Area” - </i>
-<div id="header03">
-Want Exclusive Discounts?
-<br>
-<br>
-<img src="images/memberbutton.jpg" alt=""> 
-</div>
-    
-<div id="header04">
-<img src="images/signinbutton.jpg" alt="">
-</div>
-    
-<div id="header05">
-<a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534"><img src="images/fblogo.jpg" alt=""></a>
-</div>
-</div>
-</header>
 <body>
+  <div id="header">
+   <div id="headercolor">
+    <div id="wrapper">
+	  <div id="tcmclogo">
+       <a href="indexnew.html" title="Home">
+        <img src="images/tcmclogo.jpg" alt="The TCMC logo"></a>
+      </div>
+      <div id="memberbutton" title="Become A Member">
+      <a href="becomemember.php">
+	   <img src="images/memberbutton.png" alt="Membership signup">
+      </a>
+      </div>
+      <div id="loginbutton" title="Sign In">
+      <a href="signin.php">
+       <img src="images/signinbutton.png" alt="To login page">
+      </a>
+      </div>
+      <div id="fblogo" title="TCMC Facebook">
+       <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534">
+        <img src="images/fblogo.png" alt="TCMC Facebook page"></a>
+      </div>
+	<div id="tagline1">
+     <i>- “Promoting Local Music Culture In The Townsville Area” -</i>
+    </div>
+    <div id="tagline2">
+	 <i>Want Exclusive Discounts?</i>
+    </div>
+    <div id="tagline3">
+	 <i>Already A Member?</i>
+    </div>
+    </div>   
+    </div> 
+   </div> <!-- end of header div -->
 <img src="images/artistsbanner.jpg" width="75%" alt="" img style="margin:0px auto;display:block">
 <div id="bodywrapper">
 <ul id="breadcrumbs">
