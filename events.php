@@ -7,10 +7,9 @@ require("authenticate.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>REGISTER YOUR EVENT! - Townsville Community Music Centre</title>
     <link rel="stylesheet" href="mainnew.css">
 </head>
-
 <body>
   <div id="header">
    <div id="headercolor">
@@ -45,8 +44,8 @@ require("authenticate.php");
     </div>   
     </div> 
    </div> <!-- end of header div -->
-          <div id="bodycontentAU">
-   <div id="contentAU">
+<div id="bodycontentSPO">
+<div id="contentSPO">
    <img id="banner" src="images/eventsbanner.png" alt="">
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
@@ -106,7 +105,9 @@ echo "</fieldset>\n";
 // close the database connection
 $dbh = null;
 ?>
-    </div> <!-- end of boxcontent div -->
+</div>
+<hr><!-- do not delete -->
+</div> <!-- end of boxcontent div -->
 <div id="footer">
         <div class="footerwrap">
             <div id="footer-menu">

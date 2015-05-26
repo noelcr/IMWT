@@ -421,6 +421,10 @@ td{
 	color: #ffffff;
 }
 
+a#registerlink{
+	color: #FFFFFF;
+}
+
 ul#breadcrumbs {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-size: 18px;

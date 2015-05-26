@@ -169,7 +169,6 @@ $dbh = null;
         <li><a href="" title="">E-MAIL</a></li>
 	    <li><a href="" title="">PHONE</a></li>
 	    <li><a href="" title="">POSTAL</a></li>
-
 	    <li><a href="" title="">ADDRESS</a></li>
        </ol>
       </td>

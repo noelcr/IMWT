@@ -1,14 +1,12 @@
-<?php
-include("dbconnect.php");
-?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <link href="mainnew.css" rel="stylesheet" type="text/css">
-<title>EVENTS - Townsville Community Music Centre</title> 
+<title>SIGN IN - Townsville Community Music Centre</title>
 </head>
- <body>
+
+<body>
   <div id="header">
    <div id="headercolor">
     <div id="wrapper">
@@ -42,44 +40,34 @@ include("dbconnect.php");
     </div>   
     </div> 
    </div> <!-- end of header div -->
-  <div id="bodycontentAU">
-   <div id="contentAU">
-   <img id="banner" src="images/eventsbanner.png" alt="">
+<div id="bodycontentSPO">
+   <div id="contentSPO">
+   <img id="banner" src="images/signinbanner.png" alt="">
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
    <il> > </il>
-   <il><a id="breadcrumbs" href="eventslist.php">EVENTS</a><il>
+   <il><a id="breadcrumbs" href="signin.php">SIGN IN</a><il>
    </ul>
-<p><a id="registerlink" href="events.php">REGISTER YOUR EVENT!</a></p>
-<?php
-echo "<table>";
-$sql = "SELECT * FROM events";
-foreach ($dbh->query($sql) as $row)
-{
-?>
-<?php
-    echo "<tr>";
-        echo "<td><b>"; echo "<a href="; ?>"<?php echo "eventsDetail.php?id=$row[id]"; ?>"<?php echo ">"; echo $row[name];echo"</a>"; echo "</b></td>";
-    echo "</tr>";
-    echo "<tr>";
-    echo "<td>"; echo "<p>"; echo $row[description]; echo "</p>"; echo "</td>";
-    echo "</tr>";
-    echo "<tr>";
-    echo "<td>"; echo "<p>"; echo $row[location]; echo "</p>"; echo "</td>";
-    echo "<td>"; echo "<p>"; echo $row[time]; echo "</p>"; echo "</td>";
-    echo "</tr>";
-}
-    echo "</table>"; 
-?>   
-<?php
-    echo "<a href="; ?>"<?php echo "events.php"; ?>"<?php echo ">Add/Edit Events</a>";                                  
-?> 
+<form action="dbprocesssignin.php" method="POST">
+    <table>
+        <tr> 
+            <td><label for="username">Username: </label></td>
+            <td><input type="text" name="username" id="username"></td>
+        </tr>
+        <tr> 
+            <td><label for="password">Password: </label></td>
+            <td><input type="text" name="password" id="password"></td>
+        </tr>
+     </table>
+<input type="submit" value="Sign-In"/>
+</form>
 </div>
-</div> <!-- end of boxcontent div -->
+<hr><!-- do not delete -->
+</div><!-- end of bodycontent div -->
 <div id="footer">
-        <div class="footerwrap">
-            <div id="footer-menu">
-   <div id= "footer-sites">
+<div class="footerwrap">
+<div id="footer-menu">
+ <div id= "footer-sites">
     <table width="1218" height="176">
      <tr>
       <th width="176"><a href="artistsnew.html" title="All artists"><strong>ARTISTS</strong></a><hr>
