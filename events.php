@@ -109,69 +109,65 @@ $dbh = null;
 </div>
 <hr><!-- do not delete -->
 </div> <!-- end of boxcontent div -->
-<div id="footer">
+   <div id="footer">
         <div class="footerwrap">
             <div id="footer-menu">
    <div id= "footer-sites">
     <table width="1218" height="176">
      <tr>
-      <th width="176"><a href="artistsnew.html" title="All artists"><strong>ARTISTS</strong></a><hr>
+      <th width="176"><a href="indexnew.html" title="Home Page"><strong>HOME</strong></a><hr>
       </th>
       <th width="176">
-       <a href="eventsnew.html" title="Current and future events"><b>EVENTS</b></a><hr>
+       <a href="eventsnew.html" title=""><b>ARTISTS</b></a><hr>
 	  </th>
       <th width="176">
-       <a href="bulletinboardnew.html" title="Current jobs, tutoring"><b>BULLETIN BOARD</b></a><hr>
+       <a href="bulletinboardnew.html" title=""><b>EVENTS</b></a><hr>
       </th>
       <th width="176">
-       <a href="sponsorsnew.html" title="Our sponsers"><b>SPONSORS</b></a><hr>
+       <a href="" title=""><b>BULLETIN BOARD</b></a><hr>
       </th>
       <th width="176">
-       <a href="contactusnew.html" title="Get in contact"><b>CONTACT US</b></a><hr>
+       <a href="" title=""><b>CONTENT</b></a><hr>
       </th>
       <th width="176">
-       <a href="aboutusnew.html" title="Who are we?"><b>ABOUT US</b></a><hr>
+       <a href="" title="Members"><b>MEMBERS</b></a><hr>
       </th>
      </tr>
      <tr>
       <td>
        <ol>
-	    <li><a href="" title="">SEARCH</a></li>
-	    <li><a href="" title="">LATEST</a></li>
-	    <li><a href="" title="">GENRES</a></li>
-	    <li><a href="" title="">NAMES A-Z</a></li>
        </ol>
       </td>
       <td>
        <ol>
-        <li><a href="" title="Events list">ALL</a></li>
-	    <li><a href="" title="">LATEST</a></li>
+        <li><a href="artistslist.php" title="Events list">VIEW ALL</a></li>
+	    <li><a href="musicians.php" title="REGISTER">REGISTER</a></li>
        </ol>
       </td>
       <td>
        <ol>
-        <li><a href="" title="">JOB OFFERS</a></li>
-	    <li><a href="" title="">TUTORING</a></li>
-	    <li><a href="" title="">EXPRESSION</a></li>
+        <li><a href="eventslist.php" title="">VIEW ALL</a></li>
+	    <li><a href="registerlink.php" title="">REGISTER</a></li>
        </ol>
       </td>
       <td>
        <ol>
-        <li><a href="sponsors.html" title="">LIST</a></li>
+        <li><a href="" title="">VIEW ALL</a></li>
+        <li><a href="" title="">REGISTER</a></li>
        </ol>
       </td>
       <td>
        <ol>
-        <li><a href="" title="">E-MAIL</a></li>
-	    <li><a href="" title="">PHONE</a></li>
-	    <li><a href="" title="">POSTAL</a></li>
-	    <li><a href="" title="">ADDRESS</a></li>
+        <li><a href="sponsorsnew" title="">SPONSORS</a></li>
+	    <li><a href="contactusnew" title="">CONTACT US</a></li>
+	    <li><a href="" title="">ABOUT US</a></li>
        </ol>
       </td>
       <td>
        <ol>
-        <li><a href="" title="">HISTORY</a></li>
-	    <li><a href="" title="">TIMELINE</a></li>
+        <li><a href="signin.php" title="">SIGN IN</a></li>
+	    <li><a href="" title="">LOG OUT</a></li>
+        <li><a href="" title="becomemember.php">BECOME A MEMBER</a></li>
        </ol>
       </td>
      </tr>
