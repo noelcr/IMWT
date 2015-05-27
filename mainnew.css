@@ -248,6 +248,37 @@ div#contentSPO {
 	padding-bottom: 10px;
 }
 
+#SPOTCC img,#SPOQLD img {
+	float:left
+}
+
+#SPOTCC {
+	height: 180px;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+#contentSPO hr {
+	position: absolute;
+	width: 850px;
+	height: 2px;
+	margin-top: 14px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+	margin-left: 250px;
+}
+
+#SPOQLD {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 150px;
+	margin-top: 30px;
+	
+}
+
 #bodycontentSPO img {
 	float:left	
 	height: 165px;
@@ -453,9 +484,10 @@ img#sponsors1{
 	float: left;
 }
 img#sponsors2{
-	 height: 150px; 
-	 width: 250px;
-	 float: left;
+	height: 150px;
+	width: 250px;
+	float: left;
+	margin-left: -3px;
 }
 
 ol {
