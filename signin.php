@@ -1,4 +1,4 @@
-﻿<?php session_start(); 
+<?php session_start(); 
 error_reporting(E_ALL);
 ?>
 <!doctype html>
@@ -57,7 +57,7 @@ if (isset($_SESSION['msg'])) {
 }
 if (!isset($_SESSION['username'])) {
 ?>
-<form id="login" name="login" method="post" action="secure.php">
+<form action="dbprocessbecomemember.php" method="POST">
     <table>
         <tr> 
             <td><label for="username">Username: </label></td>
@@ -72,7 +72,7 @@ if (!isset($_SESSION['username'])) {
         </tr>
      </table>
 </form>
-    <?php } ?>
+<?php } ?>
 <pre>
 <?php
 print_r($_SESSION); 
@@ -81,7 +81,6 @@ print_r($_SESSION);
 <nav><a href="secure.php">Secure Page</a>
     <?php if (isset($_SESSION['username'])) echo '<a href="logout.php">Logout</a>';
 ?>    
-</nav>
 </div>
 <hr><!-- do not delete -->
 </div><!-- end of bodycontent div -->
