@@ -248,10 +248,6 @@ div#contentSPO {
 	padding-bottom: 10px;
 }
 
-#SPOTCC img,#SPOQLD img {
-	float:left
-}
-
 #SPOTCC {
 	height: 180px;
 	margin-top: 30px;
@@ -474,16 +470,17 @@ h2 {
 img#indexbutton{
 	height=: 344px; 
 	width=: 391px;
-	
 }
-img#sponsors1{
+
+img#sponsors1 {
 	margin-left: 50px;
 	margin-right: 50px;
 	height: 150px; 
 	width: 150px;
 	float: left;
 }
-img#sponsors2{
+
+img#sponsors2 {
 	height: 150px;
 	width: 250px;
 	float: left;
