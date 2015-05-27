@@ -32,7 +32,7 @@
      <i>- “Promoting Local Music Culture In The Townsville Area” -</i>
     </div>
     <div id="tagline2">
-	 <i>Want Exclusive Discounts?</i>
+	 <i>Want Ticket Discounts?</i>
     </div>
     <div id="tagline3">
 	 <i>Already A Member?</i>
@@ -48,27 +48,51 @@
    <il> > </il>
    <il><a id="breadcrumbs" href="becomemember.php">BECOME A MEMBER</a><il>
    </ul>
+<p>
+Individual Membership subscription is $25 per year.
+<br>
+<br>
+You can support the Music Centre by becoming a Member and derive some benefits for yourself at the same time. Your subscription helps to keep us operating and we provide substantial discounts whenever possible.
+<br>
+<br>
+For the Music Centre's own events, Members' ticket discounts can be as high as 50%!
+<br>
+<br>
+The Music Centre is also registered as a Deductible Gift Recipient. Any extra donations are tax-deductible!</p><br>
+
 <form action="dbprocessbecomemember.php" method="POST">
     <table>
+        <tr> 
+            <td><label for="emailaddress">E-Mail Address: </label></td>
+            <td><input type="text" name="emailaddress" id="emailaddress"></td>
+        </tr>
+        <tr> 
+            <td><label for="password">Password: </label></td>
+            <td><input type="text" name="password" id="password"></td>
+        </tr>
         <tr> 
             <td><label for="firstname">First Name:  </label></td>
             <td><input type="text" name="firstname" id="firstname"></td>
         </tr>
         <tr> 
             <td><label for="surname">Surname: </label></td>
-            <td><input type="text" name="surname" id="password"></td>
+            <td><input type="text" name="surname" id="surname"></td>
         </tr>
         <tr> 
             <td><label for="postaladdress">Postal Address: </label></td>
-            <td><input type="text" name="surname" id="password"></td>
+            <td><input type="text" name="postaladdress" id="postaladdress"></td>
         </tr>
         <tr> 
-            <td><label for="username">Username: </label></td>
-            <td><input type="text" name="username" id="username"></td>
+            <td><label for="phoneday">Phone Number (Day): </label></td>
+            <td><input type="text" name="phoneday" id="phoneday"></td>
         </tr>
         <tr> 
-            <td><label for="password">Password: </label></td>
-            <td><input type="text" name="password" id="password"></td>
+            <td><label for="phoneday">Phone Number (After Hours): </label></td>
+            <td><input type="text" name="phoneday" id="phoneday"><input type='checkbox' name='checkboxname01' value='2' id='checkbox01' /><label for="phonedaybox">Same As Day</label></td>
+        </tr>
+        <tr> 
+            <td><label for="phoneday">Phone Number (Mobile): </label></td>
+            <td><input type="text" name="phoneday" id="phoneday"><input type='checkbox' name='checkboxname02' value='2' id='checkbox02' /><label for="mobilebox">No Mobile</label></td></td>
         </tr>
      </table>
 <br>

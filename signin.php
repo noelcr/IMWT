@@ -35,10 +35,10 @@ error_reporting(E_ALL);
      <i>- “Promoting Local Music Culture In The Townsville Area” -</i>
     </div>
     <div id="tagline2">
-	 <i>Want Exclusive Discounts?</i>
+	 <i>Want Ticket Discounts?</i>
     </div>
     <div id="tagline3">
-	 <i>Already A Member?</i>
+	 <i>Want To Become A Member</i>
     </div>
     </div>   
     </div> 
@@ -51,17 +51,11 @@ error_reporting(E_ALL);
    <il> > </il>
    <il><a id="breadcrumbs" href="signin.php">SIGN IN</a><il>
    </ul>
-<?php 
-if (isset($_SESSION['msg'])) {
-	echo "<p style='color:red'>".$_SESSION['msg']."</p>"; 
-}
-if (!isset($_SESSION['username'])) {
-?>
 <form action="dbprocessbecomemember.php" method="POST">
     <table>
         <tr> 
-            <td><label for="username">Username: </label></td>
-            <td><input type="text" name="username" id="username"></td>
+            <td><label for="email">E-Mail Address: </label></td>
+            <td><input type="text" name="email" id="email"></td>
         </tr>
         <tr> 
             <td><label for="password">Password: </label></td>
@@ -72,15 +66,6 @@ if (!isset($_SESSION['username'])) {
         </tr>
      </table>
 </form>
-<?php } ?>
-<pre>
-<?php
-print_r($_SESSION); 
-?>
-</pre>
-<nav><a href="secure.php">Secure Page</a>
-    <?php if (isset($_SESSION['username'])) echo '<a href="logout.php">Logout</a>';
-?>    
 </div>
 <hr><!-- do not delete -->
 </div><!-- end of bodycontent div -->

@@ -2,36 +2,42 @@
 include("dbconnect.php");
 ?>
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="mainnew.css" rel="stylesheet" type="text/css">
-<title>Artists - TCMC</title>
+<title>Townsville Music Community Centre</title> 
 </head>
-<body>
-<div id="header">
+ <body>
+  <div id="header">
    <div id="headercolor">
     <div id="wrapper">
 	  <div id="tcmclogo">
        <a href="indexnew.html" title="Home">
-        <img src="images/tcmclogo.jpg" alt="The TCMC logo" height="100" width="150"></a>
+        <img src="images/tcmclogo.jpg" alt="The TCMC logo"></a>
       </div>
-      <div id="memberbutton" title="Membership signup">
-	   <img src="images/memberbutton.png" alt="Membership signup" height="55" width="300">
+      <div id="memberbutton" title="Become A Member">
+      <a href="becomemember.php">
+	   <img src="images/memberbutton.png" alt="Membership signup">
+      </a>
       </div>
-      <div id="loginbutton" title="Current members">
-       <img src="images/signinbutton.png" alt="To login page" height="55" width="300">
+      <div id="loginbutton" title="Sign In">
+      <a href="signin.php">
+       <img src="images/signinbutton.png" alt="To login page">
+      </a>
       </div>
       <div id="fblogo" title="TCMC Facebook">
        <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534">
-        <img src="images/fblogo.png" alt="TCMC Facebook page" height="106" width="106"></a>
+        <img src="images/fblogo.png" alt="TCMC Facebook page"></a>
       </div>
 	<div id="tagline1">
-     <i>- “Promoting Local Music Culture<br> In The Townsville Area” -</i>
+     <i>- “Promoting Local Music Culture In The Townsville Area” -</i>
     </div>
     <div id="tagline2">
-	 <i>Want Exclusive Discounts?</i>
+	 <i>Want Ticket Discounts?</i>
+    </div>
+    <div id="tagline3">
+	 <i>Already A Member?</i>
     </div>
     </div>   
     </div> 

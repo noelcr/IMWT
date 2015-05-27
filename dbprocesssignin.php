@@ -32,7 +32,7 @@
      <i>- “Promoting Local Music Culture In The Townsville Area” -</i>
     </div>
     <div id="tagline2">
-	 <i>Want Exclusive Discounts?</i>
+	 <i>Want Ticket Discounts?</i>
     </div>
     <div id="tagline3">
 	 <i>Already A Member?</i>
