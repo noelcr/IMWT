@@ -93,56 +93,12 @@ div#boxcontent { /*for index.html only*/
 	padding-left: 5px;
 }
 
-div#bodycontent hr,div#bodycontentAU hr, {
-	position: absolute;
-	width: 1222px;
-	height: 7px;
-	margin-left: -5px;
-	margin-top: 793px;
-	background-color: #FF6E00;
-	border-color: #FF6E00;
-	border-width: 0px;
-}
-
 div#boxcontent hr {
 	position: absolute;
 	width: 1222px;
 	height: 7px;
 	margin-left: -5px;
 	margin-top: 793px;
-	background-color: #FF6E00;
-	border-color: #FF6E00;
-	border-width: 0px;
-}
-
-div#bodycontentAU hr {
-	position: absolute;
-	width: 1222px;
-	height: 7px;
-	margin-left: -5px;
-	margin-top: 1593px;
-	background-color: #FF6E00;
-	border-color: #FF6E00;
-	border-width: 0px;
-}
-
-div#bodycontentCU hr {
-	position: absolute;
-	width: 1222px;
-	height: 7px;
-	margin-left: -5px;
-	margin-top: 843px;
-	background-color: #FF6E00;
-	border-color: #FF6E00;
-	border-width: 0px;
-}
-
-div#bodycontentSPO hr {
-	position: absolute;
-	width: 1222px;
-	height: 7px;
-	margin-left: -5px;
-	margin-top: 858px;
 	background-color: #FF6E00;
 	border-color: #FF6E00;
 	border-width: 0px;
@@ -164,6 +120,17 @@ div#bodycontentART {
 	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
 }
 
+#bodycontentART hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 993px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
 div#contentART {
 	float: left;
 	width: 1181px;
@@ -180,6 +147,17 @@ div#bodycontentEVNT {
 	height: 800px;
 	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
 	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#bodycontentEVNT hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 793px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
 }
 
 div#contentEVNT {
@@ -200,6 +178,17 @@ div#bodycontentBB {
 	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
 }
 
+#bodycontentBB hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 793px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
 div#contentBB {
 	float: left;
 	width: 1181px;
@@ -216,6 +205,17 @@ div#bodycontentSPO {
 	height: 865px;
 	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
 	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#bodycontentSPO hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 858px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
 }
 
 div#contentSPO {
@@ -236,6 +236,17 @@ div#bodycontentCU {
 	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
 }
 
+#bodycontentCU hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 843px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
 div#contentCU {
 	float: left;
 	width: 1181px;
@@ -252,6 +263,17 @@ div#bodycontentAU {
 	height: 1600px;
 	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
 	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+div#bodycontentAU hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 1593px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
 }
 
 div#contentAU {
