@@ -318,6 +318,7 @@ div#bodycontentAU {
 	height: 1790px;
 	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
 	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-bottom: 60px;
 }
 
 div#bodycontentAU hr {
@@ -325,7 +326,7 @@ div#bodycontentAU hr {
 	width: 1222px;
 	height: 7px;
 	margin-left: -5px;
-	margin-top: 1783px;
+	margin-top: 1843px;
 	background-color: #FF6E00;
 	border-color: #FF6E00;
 	border-width: 0px;
@@ -334,10 +335,10 @@ div#bodycontentAU hr {
 div#contentAU {
 	float: left;
 	width: 1181px;
-	height: 1740px;
+	height: 1780px;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-bottom: 30px;
+	padding-bottom: 0px;
 }
 
 div#copyright {
