@@ -13,7 +13,7 @@ include("dbconnect.php");
    <div id="headercolor">
     <div id="wrapper">
 	  <div id="tcmclogo">
-       <a href="indexnew.html" title="Home">
+       <a href="index.html" title="Home">
         <img src="images/tcmclogo.jpg" alt="The TCMC logo"></a>
       </div>
       <div id="memberbutton" title="Become A Member">
@@ -46,7 +46,7 @@ include("dbconnect.php");
    <div id="contentAU">
    <img id="banner" src="images/eventsbanner.png" alt="">
    <ul id="breadcrumbs">
-   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
+   <il><a id="breadcrumbs" href="index.html">HOME</a></il>
    <il> > </il>
    <il><a id="breadcrumbs" href="eventslist.php">EVENTS</a><il>
    </ul>
@@ -82,7 +82,7 @@ foreach ($dbh->query($sql) as $row)
    <div id= "footer-sites">
     <table width="1218" height="176">
      <tr>
-      <th width="176"><a href="indexnew.html" title="Home Page"><strong>HOME</strong></a><hr>
+      <th width="176"><a href="index.html" title="Home Page"><strong>HOME</strong></a><hr>
       </th>
       <th width="176">
        <a href="eventsnew.html" title=""><b>ARTISTS</b></a><hr>

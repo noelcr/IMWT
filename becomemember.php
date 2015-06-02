@@ -11,7 +11,7 @@
    <div id="headercolor">
     <div id="wrapper">
 	  <div id="tcmclogo">
-       <a href="indexnew.html" title="Home">
+       <a href="index.html" title="Home">
         <img src="images/tcmclogo.jpg" alt="The TCMC logo"></a>
       </div>
       <div id="memberbutton" title="Become A Member">
@@ -44,7 +44,7 @@
    <div id="contentSPO">
    <img id="banner" src="images/becomememberbanner.png" alt="">
    <ul id="breadcrumbs">
-   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
+   <il><a id="breadcrumbs" href="index.html">HOME</a></il>
    <il> > </il>
    <il><a id="breadcrumbs" href="becomemember.php">BECOME A MEMBER</a><il>
    </ul>
@@ -107,7 +107,7 @@ The Music Centre is also registered as a Deductible Gift Recipient. Any extra do
    <div id= "footer-sites">
     <table width="1218" height="176">
      <tr>
-      <th width="176"><a href="indexnew.html" title="Home Page"><strong>HOME</strong></a><hr>
+      <th width="176"><a href="index.html" title="Home Page"><strong>HOME</strong></a><hr>
       </th>
       <th width="176">
        <a href="eventsnew.html" title=""><b>ARTISTS</b></a><hr>
