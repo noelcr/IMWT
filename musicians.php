@@ -83,7 +83,7 @@ include("dbconnect.php");
                 <input type="radio" name="feature" value="Not_Featured">Not Featured</td>
         </tr>
        <tr> 
-            <td><input type="submit" name="submit" id="submit" value="REGISTER"></td>
+            <td><input type="submit" name="submit" id="submit" value="Insert Entry"></td>
         </tr>
 </table>
 </fieldset>

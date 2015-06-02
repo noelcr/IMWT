@@ -20,30 +20,26 @@ if ($_REQUEST['submit'] == "X")
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="main.css" rel="stylesheet" type="text/css">
+<link href="mainnew.css" rel="stylesheet" type="text/css">
 <title>Artists - TCMC</title>
 </head>
 <body>
-  <div id="header">
+    <div id="header">
    <div id="headercolor">
     <div id="wrapper">
 	  <div id="tcmclogo">
        <a href="indexnew.html" title="Home">
         <img src="images/tcmclogo.jpg" alt="The TCMC logo"></a>
       </div>
-      <div id="memberbutton" title="Become A Member">
-      <a href="becomemember.php">
-	   <img src="images/memberbutton.png" alt="Membership signup">
-      </a>
+      <div id="memberbutton" title="Membership signup">
+	   <img src="images/memberbutton.png" alt="Membership signup" height="55" width="300">
       </div>
-      <div id="loginbutton" title="Sign In">
-      <a href="signin.php">
-       <img src="images/signinbutton.png" alt="To login page">
-      </a>
+      <div id="loginbutton" title="Current members">
+       <img src="images/signinbutton.png" alt="To login page" height="55" width="300">
       </div>
       <div id="fblogo" title="TCMC Facebook">
        <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534">
-        <img src="images/fblogo.png" alt="TCMC Facebook page"></a>
+        <img src="images/fblogo.png" alt="TCMC Facebook page" height="106" width="106"></a>
       </div>
 	<div id="tagline1">
      <i>- “Promoting Local Music Culture In The Townsville Area” -</i>
@@ -57,15 +53,16 @@ if ($_REQUEST['submit'] == "X")
     </div>   
     </div> 
    </div> <!-- end of header div -->
-<img src="images/artistsbanner.jpg" width="75%" alt="" img style="margin:0px auto;display:block">
-<div id="bodywrapper">
-<ul id="breadcrumbs">
-<il><a id="breadcrumbs" href="index.html">HOME</a></il>
-<il> > </il>
-<il><a id="breadcrumbs" href="artists.html">ABOUT US</a></il>
-<il> > </il>
-<il><a id="breadcrumbs" href="artists.html">ABOUT US</a></il>
-</ul>
+<div id="bodycontentSPO">
+   <div id="contentSPO">
+   <img id="banner" src="images/artistsbanner.png" alt="">
+   <ul id="breadcrumbs">
+   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
+   <il> > </il>
+   <il><a id="breadcrumbs" href="artistlist.php">ARTIST</a><il>
+   <il> > </il>
+   <il><a id="breadcrumbs" href="musicians.php">REGISTER YOUR ACT</a><il>
+   </ul>
     <h1>Results</h1><br>
 <p><a href="artistlist.php">Return to Artists page</a></p>
 <?php
@@ -174,51 +171,77 @@ foreach ($dbh->query($sql) as $row)
 $dbh = null;
 ?>
 </div>
+<hr><!-- do not delete -->
+</div><!-- end of bodycontent div -->
+          <div id="footer">
+        <div class="footerwrap">
+            <div id="footer-menu">
+   <div id= "footer-sites">
+    <table width="1218" height="176">
+     <tr>
+      <th width="176"><a href="indexnew.html" title="Home Page"><strong>HOME</strong></a><hr>
+      </th>
+      <th width="176">
+       <a href="eventsnew.html" title=""><b>ARTISTS</b></a><hr>
+	  </th>
+      <th width="176">
+       <a href="bulletinboardnew.html" title=""><b>EVENTS</b></a><hr>
+      </th>
+      <th width="176">
+       <a href="" title=""><b>BULLETIN BOARD</b></a><hr>
+      </th>
+      <th width="176">
+       <a href="" title=""><b>CONTENT</b></a><hr>
+      </th>
+      <th width="176">
+       <a href="" title="Members"><b>MEMBERS</b></a><hr>
+      </th>
+     </tr>
+     <tr>
+      <td>
+       <ol>
+       </ol>
+      </td>
+      <td>
+       <ol>
+        <li><a href="artistslist.php" title="Events list">VIEW ALL</a></li>
+	    <li><a href="musicians.php" title="REGISTER">REGISTER</a></li>
+       </ol>
+      </td>
+      <td>
+       <ol>
+        <li><a href="eventslist.php" title="">VIEW ALL</a></li>
+	    <li><a href="registerlink.php" title="">REGISTER</a></li>
+       </ol>
+      </td>
+      <td>
+       <ol>
+        <li><a href="" title="">VIEW ALL</a></li>
+        <li><a href="" title="">REGISTER</a></li>
+       </ol>
+      </td>
+      <td>
+       <ol>
+        <li><a href="sponsorsnew" title="">SPONSORS</a></li>
+	    <li><a href="contactusnew" title="">CONTACT US</a></li>
+	    <li><a href="" title="">ABOUT US</a></li>
+       </ol>
+      </td>
+      <td>
+       <ol>
+        <li><a href="signin.php" title="">SIGN IN</a></li>
+	    <li><a href="" title="">LOG OUT</a></li>
+        <li><a href="" title="becomemember.php">BECOME A MEMBER</a></li>
+       </ol>
+      </td>
+     </tr>
+    </table>
+    </div> <!-- end footersites div -->
+   </div> <!-- end footermenu div -->
+   <div id="copyright">
+    site design &copy; 2015 Chilly IT Group
+   </div>
+   </div> <!-- end of footerwrap div -->
+   </div> <!-- end of footer div -->
 </body>
-<footer>
-<div id= "footer">
-<div id="footercontainer">
-<div id="footerlinks01">
-<a href="artists.html"><b>ARTISTS</b></a>
-<hr>
-<a href="">SEARCH</a>
-<a href="">LATEST</a>
-<a href="">GENRES</a>
-<a href="">NAMES A-Z</a></p>
-</div>
-<div id="footerlinks02">
-<a href="events.html"><b>EVENTS</b></a>
-<hr>
-<a href="">ALL</a>
-<a href="">LATEST</a>
-</div>
-<div id="footerlinks03">
-<a href="bulletin"><b>BULLETIN</b></a>
-<hr>
-<a href="">JOB OFFERS</a>
-<a href="">TUTORING</a>
-<a href="">EXPRESSION</a>
-</div>
-<div id="footerlinks04">
-<a href="sponsors.html"><b>SPONSORS</b></a>
-<hr>
-<a href="sponsors.html">LIST</a>
-</div>
-<div id="footerlinks05">
-<a href="contactus.html"><b>CONTACT US</b></a>
-<hr>
-<a href="">E-MAIL</a>
-<a href="">PHONE</a>
-<a href="">POSTAL</a>
-<a href="">ADDRESS</a>
-</div>
-<div id="footerlinks06">
-<a href=""><b>ABOUT US</b></a>
-<hr>
-<a href="">HISTORY</a>
-<a href="">TIMELINE</a>
-</div>
-</div>
-</div>
-</footer>
 </html>

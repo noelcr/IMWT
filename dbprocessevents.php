@@ -65,7 +65,7 @@ if ($_REQUEST['submit'] == "X")
    <il><a id="breadcrumbs" href="eventslist.php">EVENTS</a><il>
    </ul>
     <h1>Results</h1><br>
-<p><a href="artistlist.php">Return to Artists page</a></p>
+<p><a href="eventslist.php">Return to Events page</a></p>
 <?php
 echo "<h2>Form Data</h2>";
 echo "<pre>";
