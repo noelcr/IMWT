@@ -1,11 +1,13 @@
+<?php
+include("dbconnect.php");
+?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <link href="mainnew.css" rel="stylesheet" type="text/css">
-<title>Townsville Music Community Centre</title> 
+<title>ARTIST - Townsville Community Music Centre</title> 
 </head>
- <body>
   <div id="header">
    <div id="headercolor">
     <div id="wrapper">
@@ -39,28 +41,33 @@
     </div>   
     </div> 
    </div> <!-- end of header div -->
-  <div id="boxcontent">
-    <div id="index">
-	 <a href="artistlist.php" title="Artists"><img id="indexbutton" src="images/artistsbutton.png" alt="Browse the local talent"></a>
-	</div>
-	<div id="index">
-	 <a href="eventslist.php" title="Events"><img id="indexbutton" src="images/eventsbutton.png" alt="See upcoming events"></a>
-	</div>
-	<div id="index">
-	 <a href="bulletinlist.php" title="Bulletin Board"><img id="indexbutton" src="images/bulletinboardbutton.png" alt="Latest jobs, tutoring and more"></a>
-	</div>
-	<div id="index">
-	 <a href="sponsorsnew.html" title="Sponsors"><img id="indexbutton" src="images/sponsorsbutton.png" alt="View Our Sponsors"></a>
-	</div>
-	<div id="index">
-	 <a href="contactusnew.html" title="Contact Us"><img id="indexbutton" src="images/contactusbuttons.png" alt="Contact us here"></a>
-	</div>
-	<div id="index">
-	 <a href="aboutusnew.html" title="About Us"><img id="indexbutton" src="images/aboutusbutton.png" alt="The history of TCMC"></a>
-	</div>
-   <hr>
-  </div> 
-  <!-- end of boxcontent div -->
+  <div id="bodycontentAU">
+   <img id="banner" src="images/bulletinboardbanner.jpg" alt="">
+   <ul id="breadcrumbs">
+   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
+   <il> > </il>
+   <il><a id="breadcrumbs" href="bulletinlist.php">BULLETIN BOARD</a><il>
+   </ul>
+<p><a id="registerlink" href="bulletin.php">Write a Bulletin!</a></p>
+<?php
+echo "<table>";
+$sql = "SELECT * FROM bulletin";
+foreach ($dbh->query($sql) as $row)
+{
+?>
+<?php
+    echo "<tr>";
+        echo "<td><b><a>"; echo $row[name]; echo "</a></b></td>";
+    echo "</tr>";
+    echo "<tr>";
+        echo "<td>"; echo "<p>"; echo $row[description]; echo "</p>"; echo "</td>";
+        echo "</tr>";
+}
+    echo "</table>"; 
+?>
+</div>
+<hr><!-- do not delete -->
+</div> <!-- end of boxcontent div -->
    <div id="footer">
         <div class="footerwrap">
             <div id="footer-menu">
@@ -70,13 +77,13 @@
       <th width="176"><a href="indexnew.html" title="Home Page"><strong>HOME</strong></a><hr>
       </th>
       <th width="176">
-       <a href="eventsnew.html" title=""><b>ARTISTS</b></a><hr>
+       <a href="artistlist.php" title=""><b>ARTISTS</b></a><hr>
 	  </th>
       <th width="176">
-       <a href="bulletinboardnew.html" title=""><b>EVENTS</b></a><hr>
+       <a href="eventslist.php" title=""><b>EVENTS</b></a><hr>
       </th>
       <th width="176">
-       <a href="" title=""><b>BULLETIN BOARD</b></a><hr>
+       <a href="bulletinlist.php" title=""><b>BULLETIN BOARD</b></a><hr>
       </th>
       <th width="176">
        <a href="" title=""><b>CONTENT</b></a><hr>
@@ -131,5 +138,5 @@
    </div>
    </div> <!-- end of footerwrap div -->
    </div> <!-- end of footer div -->
-  </body>
+</body>
 </html>
