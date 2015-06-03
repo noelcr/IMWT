@@ -47,7 +47,7 @@ include("dbconnect.php");
 <div id="contentSPO">
    <img src="images/eventsbanner.png" alt="">
    <ul id="breadcrumbs">
-   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
+   <il><a id="breadcrumbs" href="index.html">HOME</a></il>
    <il> > </il>
    <il><a id="breadcrumbs" href="eventslist.php">EVENTS</a><il>
    <il> > </il>
