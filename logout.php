@@ -1,21 +1,20 @@
 <?php
-session_start(); 
-error_reporting(E_ALL);
+    session_start();
+	session_destroy();
 ?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <link href="mainnew.css" rel="stylesheet" type="text/css">
-<title>SIGN IN - Townsville Community Music Centre</title>
+<title>LOG OUT - Townsville Community Music Centre</title> 
 </head>
-
-<body>
+ <body>
   <div id="header">
    <div id="headercolor">
     <div id="wrapper">
 	  <div id="tcmclogo">
-       <a href="indexnew.html" title="Home">
+       <a href="index.html" title="Home">
         <img src="images/tcmclogo.jpg" alt="The TCMC logo"></a>
       </div>
       <div id="memberbutton" title="Become A Member">
@@ -39,44 +38,31 @@ error_reporting(E_ALL);
 	 <i>Want Ticket Discounts?</i>
     </div>
     <div id="tagline3">
-	 <i>Want To Become A Member</i>
+	 <i>Already A Member?</i>
     </div>
     </div>   
     </div> 
    </div> <!-- end of header div -->
-<div id="bodycontentSPO">
-   <div id="contentSPO">
-   <img id="banner" src="images/signinbanner.png" alt="">
-   <ul id="breadcrumbs">
-   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
-   <il> > </il>
-   <il><a id="breadcrumbs" href="signin.php">SIGN IN</a><il>
-   </ul>
+  <div id="bodycontentCU">
+   <div id="contentCU">
+    <img id="banner" src="images/logoutbanner.png" alt="Log Out banner">
+    <ul id="breadcrumbs">
+	 <il><a id="breadcrumbs" href="index.html">HOME</a></il>
+	 <il> > </il>
+	 <il><a id="breadcrumbs" href="logout.php">LOG OUT</a><il>
+	</ul>
 <?php
-if (!isset($_SESSION['emailaddress'])) {
+if (isset($_SESSION['emailaddress']) == true) {
 ?>
-	<form id="signin" name= "signin" method ="post" action="index.html" method="POST">
-    <table>
-        <tr> 
-            <td><label for="email">E-Mail Address: </label></td>
-            <td><input type="text" name="email" id="email"></td>
-        </tr>
-        <tr> 
-            <td><label for="password">Password: </label></td>
-            <td><input type="password" name="password" id="password"></td>
-        </tr>
-        <tr>
-        <td><input type="submit" value="Sign-In"/></td>
-        </tr>
-     </table>
-</form>
-<?php }
-else { ?>
-<p>Already logged in! No need to sign-in :) !!! </p>
-<?php } ?> 
-
+    <p>"Logging out, you will re-directed to the home page.";</p>
+<?php header("Location: index.html");
+} else { ?>
+    <p> "Whoops! You need to sign in before you can log out ;)"; </p>
+<?php
+}
+?>
 </div>
-<hr>
+<hr><!-- do not delete -->
 </div><!-- end of bodycontent div -->
    <div id="footer">
         <div class="footerwrap">
@@ -84,8 +70,7 @@ else { ?>
    <div id= "footer-sites">
     <table width="1218" height="176">
      <tr>
-      <th width="176">
-       <a href="index.html" title=""><b>ARTISTS</b></a><hr>
+      <th width="176"><a href="index.html" title="Home Page"><strong>HOME</strong></a><hr>
       </th>
       <th width="176">
        <a href="eventsnew.html" title=""><b>ARTISTS</b></a><hr>
@@ -149,5 +134,5 @@ else { ?>
    </div>
    </div> <!-- end of footerwrap div -->
    </div> <!-- end of footer div -->
-</body>
+  </body>
 </html>

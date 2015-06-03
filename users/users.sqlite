@@ -1,0 +1,11 @@
+CREATE TABLE `users` (
+  `emailaddress` text NOT NULL PRIMARY KEY AUTOINCREMENT,
+  `password` text NOT NULL,
+  `firstname` text NOT NULL,
+  `lastname` text NOT NULL,
+  `postaladdress` text NOT NULL,
+  `phonenumber` integer NOT NULL,
+  `phoneafter` integer NOT NULL,
+  `phonemobile` integer NOT NULL,
+  PRIMARY KEY (`emailaddress`)
+)

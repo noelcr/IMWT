@@ -1,3 +1,6 @@
+<?php
+include("dbconnectmembers.php")
+?>
 <!doctype html>
 <html>
 <head>
@@ -60,7 +63,10 @@ For the Music Centre's own events, Members' ticket discounts can be as high as 5
 <br>
 The Music Centre is also registered as a Deductible Gift Recipient. Any extra donations are tax-deductible!</p><br>
 
-<form action="dbprocessbecomemember.php" method="POST">
+<?php
+?>
+<fieldset class="subtleset">
+<form id="insert" name"insert" method="post" action="dbprocessmember.php">
     <table>
         <tr> 
             <td><label for="emailaddress">E-Mail Address: </label></td>
@@ -88,15 +94,16 @@ The Music Centre is also registered as a Deductible Gift Recipient. Any extra do
         </tr>
         <tr> 
             <td><label for="phoneday">Phone Number (After Hours): </label></td>
-            <td><input type="text" name="phoneday" id="phoneday"><input type='checkbox' name='checkboxname01' value='2' id='checkbox01' /><label for="phonedaybox">Same As Day</label></td>
+            <td><input type="text" name="phoneday" id="phoneday"></td>
         </tr>
         <tr> 
             <td><label for="phoneday">Phone Number (Mobile): </label></td>
-            <td><input type="text" name="phoneday" id="phoneday"><input type='checkbox' name='checkboxname02' value='2' id='checkbox02' /><label for="mobilebox">No Mobile</label></td></td>
+            <td><input type="text" name="phoneday" id="phoneday"></td>
         </tr>
      </table>
 <br>
 <input type="submit" value="Sign Up"/>
+</fieldset>
 </form>
 </div>
 <hr><!-- do not delete -->

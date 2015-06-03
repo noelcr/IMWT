@@ -1,6 +1,14 @@
 <?php
-session_start(); 
-error_reporting(E_ALL);
+include("dbconnectmembers.php");
+
+$debugOn = true;
+
+if ($_REQUEST['submit'] == "X")
+{
+	$sql = "DELETE FROM people WHERE id = '$_REQUEST[id]'";
+	if ($dbh->exec($sql))
+		header("Location: index.html"); 
+}
 ?>
 <!doctype html>
 <html>
@@ -39,7 +47,7 @@ error_reporting(E_ALL);
 	 <i>Want Ticket Discounts?</i>
     </div>
     <div id="tagline3">
-	 <i>Want To Become A Member</i>
+	 <i>Already A Member?</i>
     </div>
     </div>   
     </div> 
@@ -50,33 +58,67 @@ error_reporting(E_ALL);
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
    <il> > </il>
-   <il><a id="breadcrumbs" href="signin.php">SIGN IN</a><il>
+   <il><a id="breadcrumbs" href="becomemember.php">BECOME A MEMBER</a><il>
    </ul>
+<p><a href=".php">Registration Successful! Return to Home page!!</a></p>
 <?php
-if (!isset($_SESSION['emailaddress'])) {
+echo "<h2>Form Data</h2>";
+echo "<pre>";
+print_r($_REQUEST);
+echo "</pre>";
+if ($_REQUEST['submit'] == "Insert Entry")
+{
+	$sql = "INSERT INTO users (emailaddress, password, firstname, lastname, postaladdress, phonenumber, phoneafter, phonemobile) VALUES ('$_REQUEST[emailaddress]', '$_REQUEST[password]', '$_REQUEST[firstname]', '$_REQUEST[lastname]', '$_REQUEST[postaladdress]', '$_REQUEST[phonenumber]', '$_REQUEST[phoneafter]', '$_REQUEST[postaladdress]')";
+	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
+	if ($dbh->exec($sql))
+		echo "Inserted $_REQUEST[name]";
+	else
+		echo "Not inserted";
+}
+else if ($_REQUEST['submit'] == "Delete Entry")
+{
+	$sql = "DELETE FROM people WHERE id = '$_REQUEST[id]'";
+	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
+	if ($dbh->exec($sql))
+		echo "Deleted $_REQUEST[name]";
+	else
+		echo "Not deleted";
+}
+else if ($_REQUEST['submit'] == "Update Entry")
+{
+	$sql = "UPDATE people SET emailaddress = '$_REQUEST[emailadddress]', password = '$_REQUEST[password]' WHERE id = '$_REQUEST[id]'";
+	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
+	if ($dbh->exec($sql))
+		echo "Updated $_REQUEST[emailaddress]";
+	else
+		echo "Not updated";
+}
+else {
+	echo "This page did not come from a valid form submission.<br />\n";
+}
+echo "</strong></p>\n";
+echo "<h2>Member in Database Now</h2>\n";
+$sql = "SELECT * FROM people";
+$result = $dbh->query($sql);
+$resultCopy = $result;
+
+if ($debugOn) {
+	echo "<pre>";	
+	$rows = $result->fetchall(PDO::FETCH_ASSOC);
+	echo count($rows) . " records in table<br />\n";
+	print_r($rows);
+	echo "</pre>";
+	echo "<br />\n";
+}
+foreach ($dbh->query($sql) as $row)
+{
+	print $row[emailaddress] . "<br />\n";
+}
+$dbh = null;
 ?>
-	<form id="signin" name= "signin" method ="post" action="index.html" method="POST">
-    <table>
-        <tr> 
-            <td><label for="email">E-Mail Address: </label></td>
-            <td><input type="text" name="email" id="email"></td>
-        </tr>
-        <tr> 
-            <td><label for="password">Password: </label></td>
-            <td><input type="password" name="password" id="password"></td>
-        </tr>
-        <tr>
-        <td><input type="submit" value="Sign-In"/></td>
-        </tr>
-     </table>
-</form>
-<?php }
-else { ?>
-<p>Already logged in! No need to sign-in :) !!! </p>
-<?php } ?> 
 
 </div>
-<hr>
+<hr><!-- do not delete -->
 </div><!-- end of bodycontent div -->
    <div id="footer">
         <div class="footerwrap">
@@ -85,7 +127,7 @@ else { ?>
     <table width="1218" height="176">
      <tr>
       <th width="176">
-       <a href="index.html" title=""><b>ARTISTS</b></a><hr>
+       <a href="index.html" title="Home Page"><strong>HOME</strong></a><hr>
       </th>
       <th width="176">
        <a href="eventsnew.html" title=""><b>ARTISTS</b></a><hr>
@@ -136,7 +178,7 @@ else { ?>
       <td>
        <ol>
         <li><a href="signin.php" title="">SIGN IN</a></li>
-	    <li><a href="" title="">LOG OUT</a></li>
+	    <li><a href="logout.php" title="">LOG OUT</a></li>
         <li><a href="" title="becomemember.php">BECOME A MEMBER</a></li>
        </ol>
       </td>
