@@ -15,17 +15,17 @@ error_reporting(E_ALL);
    <div id="headercolor">
     <div id="wrapper">
 	  <div id="tcmclogo">
-       <a href="indexnew.html" title="Home">
+       <a href="index.html" title="Home">
         <img src="images/tcmclogo.jpg" alt="The TCMC logo"></a>
       </div>
       <div id="memberbutton" title="Become A Member">
       <a href="becomemember.php">
-	   <img src="images/memberbutton.png" alt="Membership signup">
+	   <img src="images/memberbutton.png" alt="Sign Up">
       </a>
       </div>
       <div id="loginbutton" title="Sign In">
       <a href="signin.php">
-       <img src="images/signinbutton.png" alt="To login page">
+       <img src="images/signinbutton.png" alt="Sign In For Existing Users">
       </a>
       </div>
       <div id="fblogo" title="TCMC Facebook">
@@ -39,7 +39,7 @@ error_reporting(E_ALL);
 	 <i>Want Ticket Discounts?</i>
     </div>
     <div id="tagline3">
-	 <i>Want To Become A Member</i>
+	 <i>Already A Member?</i>
     </div>
     </div>   
     </div> 

@@ -24,22 +24,26 @@ if ($_REQUEST['submit'] == "X")
 <title>Artists - TCMC</title>
 </head>
 <body>
-    <div id="header">
+  <div id="header">
    <div id="headercolor">
     <div id="wrapper">
 	  <div id="tcmclogo">
-       <a href="indexnew.html" title="Home">
+       <a href="index.html" title="Home">
         <img src="images/tcmclogo.jpg" alt="The TCMC logo"></a>
       </div>
-      <div id="memberbutton" title="Membership signup">
-	   <img src="images/memberbutton.png" alt="Membership signup" height="55" width="300">
+      <div id="memberbutton" title="Become A Member">
+      <a href="becomemember.php">
+	   <img src="images/memberbutton.png" alt="Sign Up">
+      </a>
       </div>
-      <div id="loginbutton" title="Current members">
-       <img src="images/signinbutton.png" alt="To login page" height="55" width="300">
+      <div id="loginbutton" title="Sign In">
+      <a href="signin.php">
+       <img src="images/signinbutton.png" alt="Sign In For Existing Users">
+      </a>
       </div>
       <div id="fblogo" title="TCMC Facebook">
        <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534">
-        <img src="images/fblogo.png" alt="TCMC Facebook page" height="106" width="106"></a>
+        <img src="images/fblogo.png" alt="TCMC Facebook page"></a>
       </div>
 	<div id="tagline1">
      <i>- “Promoting Local Music Culture In The Townsville Area” -</i>

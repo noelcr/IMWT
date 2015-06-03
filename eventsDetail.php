@@ -10,21 +10,21 @@ include("dbconnect.php");
 <title>Artists - TCMC</title>
 </head>
 <body>
-  <div id="header">
+<div id="header">
    <div id="headercolor">
     <div id="wrapper">
 	  <div id="tcmclogo">
-       <a href="indexnew.html" title="Home">
+       <a href="index.html" title="Home">
         <img src="images/tcmclogo.jpg" alt="The TCMC logo"></a>
       </div>
       <div id="memberbutton" title="Become A Member">
       <a href="becomemember.php">
-	   <img src="images/memberbutton.png" alt="Membership signup">
+	   <img src="images/memberbutton.png" alt="Sign Up">
       </a>
       </div>
       <div id="loginbutton" title="Sign In">
       <a href="signin.php">
-       <img src="images/signinbutton.png" alt="To login page">
+       <img src="images/signinbutton.png" alt="Sign In For Existing Users">
       </a>
       </div>
       <div id="fblogo" title="TCMC Facebook">
