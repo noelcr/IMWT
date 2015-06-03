@@ -122,7 +122,7 @@ foreach ($dbh->query($sql) as $row)
       <td>
        <ol>
         <li><a href="eventslist.php" title="View All Events">VIEW ALL</a></li>
-	    <li><a href="registerlink.php" title="Register Your Event">REGISTER</a></li>
+	    <li><a href="events.php" title="Register Your Event">REGISTER</a></li>
        </ol>
       </td>
       <td>
