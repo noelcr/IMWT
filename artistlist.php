@@ -82,10 +82,10 @@ foreach ($dbh->query($sql) as $row)
        <a href="artistlist.php" title=""><b>ARTISTS</b></a><hr>
 	  </th>
       <th width="176">
-       <a href="bulletinboardnew.html" title=""><b>EVENTS</b></a><hr>
+       <a href="bulletinlist.php" title=""><b>EVENTS</b></a><hr>
       </th>
       <th width="176">
-       <a href="bulletinboardnew.html" title=""><b>BULLETIN BOARD</b></a><hr>
+       <a href="bulletinlist.php" title=""><b>BULLETIN BOARD</b></a><hr>
       </th>
       <th width="176">
        <a href="" title=""><b>CONTENT</b></a><hr>

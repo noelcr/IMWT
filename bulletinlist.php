@@ -68,19 +68,19 @@ foreach ($dbh->query($sql) as $row)
 </div>
 <hr><!-- do not delete -->
 </div> <!-- end of boxcontent div -->
-   <div id="footer">
+  <div id="footer">
         <div class="footerwrap">
             <div id="footer-menu">
    <div id= "footer-sites">
     <table width="1218" height="176">
      <tr>
-      <th width="176"><a href="indexnew.html" title="Home Page"><strong>HOME</strong></a><hr>
+      <th width="176"><a href="index.html" title="Home Page"><strong>HOME</strong></a><hr>
       </th>
       <th width="176">
        <a href="artistlist.php" title=""><b>ARTISTS</b></a><hr>
 	  </th>
       <th width="176">
-       <a href="eventslist.php" title=""><b>EVENTS</b></a><hr>
+       <a href="bulletinlist.php" title=""><b>EVENTS</b></a><hr>
       </th>
       <th width="176">
        <a href="bulletinlist.php" title=""><b>BULLETIN BOARD</b></a><hr>
@@ -99,7 +99,7 @@ foreach ($dbh->query($sql) as $row)
       </td>
       <td>
        <ol>
-        <li><a href="artistslist.php" title="Events list">VIEW ALL</a></li>
+        <li><a href="artistlist.php" title="Events list">VIEW ALL</a></li>
 	    <li><a href="musicians.php" title="REGISTER">REGISTER</a></li>
        </ol>
       </td>
@@ -117,16 +117,16 @@ foreach ($dbh->query($sql) as $row)
       </td>
       <td>
        <ol>
-        <li><a href="sponsorsnew" title="">SPONSORS</a></li>
-	    <li><a href="contactusnew" title="">CONTACT US</a></li>
-	    <li><a href="" title="">ABOUT US</a></li>
+        <li><a href="sponsorsnew.html" title="">SPONSORS</a></li>
+	    <li><a href="contactusnew.html" title="">CONTACT US</a></li>
+	    <li><a href="aboutusnew.html" title="">ABOUT US</a></li>
        </ol>
       </td>
       <td>
        <ol>
         <li><a href="signin.php" title="">SIGN IN</a></li>
 	    <li><a href="" title="">LOG OUT</a></li>
-        <li><a href="" title="becomemember.php">BECOME A MEMBER</a></li>
+        <li><a href="becomemember.php" title="becomemember.php">BECOME A MEMBER</a></li>
        </ol>
       </td>
      </tr>
