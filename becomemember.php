@@ -45,7 +45,7 @@ include("dbconnectmembers.php")
    </div> <!-- end of header div -->
 <div id="bodycontentSPO">
    <div id="contentSPO">
-   <img id="banner" src="images/becomememberbanner.png" alt="">
+   <img src="images/becomememberbanner.png" alt="">
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="index.html">HOME</a></il>
    <il> > </il>
@@ -146,7 +146,7 @@ The Music Centre is also registered as a Deductible Gift Recipient. Any extra do
       <td>
        <ol>
         <li><a href="eventslist.php" title="View All Events">VIEW ALL</a></li>
-	    <li><a href="registerlink.php" title="Register Your Event">REGISTER</a></li>
+	    <li><a href="events.php" title="Register Your Event">REGISTER</a></li>
        </ol>
       </td>
       <td>

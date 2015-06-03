@@ -43,7 +43,7 @@ include("dbconnect.php");
    </div> <!-- end of header div -->
   <div id="bodycontentAU">
    <div id="contentAU">
-   <img id="banner" src="images/artistsbanner.png" alt="">
+   <img src="images/artistsbanner.png" alt="">
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
    <il> > </il>
@@ -111,7 +111,7 @@ foreach ($dbh->query($sql) as $row)
       <td>
        <ol>
         <li><a href="eventslist.php" title="View All Events">VIEW ALL</a></li>
-	    <li><a href="registerlink.php" title="Register Your Event">REGISTER</a></li>
+	    <li><a href="events.php" title="Register Your Event">REGISTER</a></li>
        </ol>
       </td>
       <td>

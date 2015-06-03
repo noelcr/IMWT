@@ -44,7 +44,7 @@ include("dbconnect.php");
    </div> <!-- end of header div -->
   <div id="bodycontentAU">
    <div id="contentAU">
-   <img id="banner" src="images/eventsbanner.png" alt="">
+   <img src="images/eventsbanner.png" alt="">
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="index.html">HOME</a></il>
    <il> > </il>
@@ -73,7 +73,10 @@ foreach ($dbh->query($sql) as $row)
 ?>   
 <?php
     echo "<a href="; ?>"<?php echo "events.php"; ?>"<?php echo ">Add/Edit Events</a>";                                  
-?> 
+?>
+</div> 
+<hr>
+</div>
    <div id="footer">
         <div class="footerwrap">
             <div id="footer-menu">

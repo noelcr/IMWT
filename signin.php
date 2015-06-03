@@ -46,7 +46,7 @@ error_reporting(E_ALL);
    </div> <!-- end of header div -->
 <div id="bodycontentSPO">
    <div id="contentSPO">
-   <img id="banner" src="images/signinbanner.png" alt="">
+   <img src="images/signinbanner.png" alt="">
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
    <il> > </il>

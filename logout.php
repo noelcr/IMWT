@@ -45,7 +45,7 @@
    </div> <!-- end of header div -->
   <div id="bodycontentCU">
    <div id="contentCU">
-    <img id="banner" src="images/logoutbanner.png" alt="Log Out banner">
+    <img src="images/logoutbanner.png" alt="Log Out banner">
     <ul id="breadcrumbs">
 	 <il><a id="breadcrumbs" href="index.html">HOME</a></il>
 	 <il> > </il>

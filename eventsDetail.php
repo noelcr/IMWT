@@ -45,7 +45,7 @@ include("dbconnect.php");
    </div> <!-- end of header div -->
  <div id="bodycontentAU">
    <div id="contentAU">
-   <img id="banner" src="images/eventsbanner.png" alt="">
+   <img src="images/eventsbanner.png" alt="">
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
    <il> > </il>
