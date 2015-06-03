@@ -52,13 +52,11 @@
 	 <il><a id="breadcrumbs" href="logout.php">LOG OUT</a><il>
 	</ul>
 <?php
-if (isset($_SESSION['emailaddress']) == true) {
-?>
-    <p>"Logging out, you will re-directed to the home page.";</p>
-<?php header("Location: index.html");
-} else { ?>
-    <p> "Whoops! You need to sign in before you can log out ;)"; </p>
-<?php
+if (isset($_SESSION['emailaddress']) && $_SESSION['emailaddress'] == true) {
+    echo "Logging out, you will re-directed to the home page.";
+	header("Location: index.html");
+} else {
+    echo "Whoops! You need to sign in before you can log out ;)";
 }
 ?>
 </div>
