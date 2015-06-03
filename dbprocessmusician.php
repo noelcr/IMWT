@@ -173,25 +173,25 @@ $dbh = null;
 </div>
 <hr><!-- do not delete -->
 </div><!-- end of bodycontent div -->
-          <div id="footer">
+   <div id="footer">
         <div class="footerwrap">
             <div id="footer-menu">
    <div id= "footer-sites">
     <table width="1218" height="176">
      <tr>
-      <th width="176"><a href="indexnew.html" title="Home Page"><strong>HOME</strong></a><hr>
+      <th width="176"><a href="index.html" title="Home Page"><strong>HOME</strong></a><hr>
       </th>
       <th width="176">
-       <a href="eventsnew.html" title=""><b>ARTISTS</b></a><hr>
+       <a href="artistlist.php" title="View All Artists"><b>ARTISTS</b></a><hr>
 	  </th>
       <th width="176">
-       <a href="bulletinboardnew.html" title=""><b>EVENTS</b></a><hr>
+       <a href="eventslist.php" title="View All Events"><b>EVENTS</b></a><hr>
       </th>
       <th width="176">
-       <a href="" title=""><b>BULLETIN BOARD</b></a><hr>
+       <a href="bulletinlist.php" title="View All Bulletin Posts"><b>BULLETIN BOARD</b></a><hr>
       </th>
       <th width="176">
-       <a href="" title=""><b>CONTENT</b></a><hr>
+       <a href="" title="Content"><b>CONTENT</b></a><hr>
       </th>
       <th width="176">
        <a href="" title="Members"><b>MEMBERS</b></a><hr>
@@ -204,34 +204,34 @@ $dbh = null;
       </td>
       <td>
        <ol>
-        <li><a href="artistslist.php" title="Events list">VIEW ALL</a></li>
-	    <li><a href="musicians.php" title="REGISTER">REGISTER</a></li>
+        <li><a href="artistlist.php" title="View All Artists">VIEW ALL</a></li>
+	    <li><a href="musicians.php" title="Register Your Artist">REGISTER</a></li>
        </ol>
       </td>
       <td>
        <ol>
-        <li><a href="eventslist.php" title="">VIEW ALL</a></li>
-	    <li><a href="registerlink.php" title="">REGISTER</a></li>
+        <li><a href="eventslist.php" title="View All Events">VIEW ALL</a></li>
+	    <li><a href="registerlink.php" title="Register Your Event">REGISTER</a></li>
        </ol>
       </td>
       <td>
        <ol>
-        <li><a href="" title="">VIEW ALL</a></li>
-        <li><a href="" title="">REGISTER</a></li>
+        <li><a href="bulletinlist.php" title="View All Bulletin Posts">VIEW ALL</a></li>
+        <li><a href="bulletin.php" title="Register Your Bulletin Post">REGISTER</a></li>
        </ol>
       </td>
       <td>
        <ol>
-        <li><a href="sponsorsnew" title="">SPONSORS</a></li>
-	    <li><a href="contactusnew" title="">CONTACT US</a></li>
-	    <li><a href="" title="">ABOUT US</a></li>
+        <li><a href="sponsors.html" title="View TCMC's Sponsors">SPONSORS</a></li>
+	    <li><a href="contactus.html" title="Our Address and Contact Information">CONTACT US</a></li>
+	    <li><a href="aboutus.html" title="The History of TCMC">ABOUT US</a></li>
        </ol>
       </td>
       <td>
        <ol>
-        <li><a href="signin.php" title="">SIGN IN</a></li>
-	    <li><a href="" title="">LOG OUT</a></li>
-        <li><a href="" title="becomemember.php">BECOME A MEMBER</a></li>
+        <li><a href="signin.php" title="Sign In For Existing Members">SIGN IN</a></li>
+	    <li><a href="logout.php" title="Log Out">LOG OUT</a></li>
+        <li><a href="becomemember.php" title="Become A Member">BECOME A MEMBER</a></li>
        </ol>
       </td>
      </tr>
