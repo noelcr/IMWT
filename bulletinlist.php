@@ -68,9 +68,9 @@ foreach ($dbh->query($sql) as $row)
 </div>
 <hr><!-- do not delete -->
 </div> <!-- end of boxcontent div -->
-   <div id="footer">
-        <div class="footerwrap">
-            <div id="footer-menu">
+<div id="footer">
+<div class="footerwrap">
+<div id="footer-menu">
    <div id= "footer-sites">
     <table width="1218" height="176">
      <tr>

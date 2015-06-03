@@ -6,7 +6,7 @@ include("dbconnect.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Write A BULLETIN! - Townsville Community Music Centre</title>
+    <title>WRITE A BULLETIN - Townsville Community Music Centre</title>
     <link rel="stylesheet" href="mainnew.css">
 </head>
 <body>
@@ -45,7 +45,7 @@ include("dbconnect.php");
    </div> <!-- end of header div -->
 <div id="bodycontentSPO">
 <div id="contentSPO">
-   <img id="banner" src="images/bulletinboardbanner.jpg" alt="">
+<img id="banner" src="images/bulletinboardbanner.png" alt="">
    <ul id="breadcrumbs">
    <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
    <il> > </il>
@@ -101,9 +101,9 @@ $dbh = null;
 </div>
 <hr><!-- do not delete -->
 </div> <!-- end of boxcontent div -->
-   <div id="footer">
-        <div class="footerwrap">
-            <div id="footer-menu">
+<div id="footer">
+<div class="footerwrap">
+<div id="footer-menu">
    <div id= "footer-sites">
     <table width="1218" height="176">
      <tr>
