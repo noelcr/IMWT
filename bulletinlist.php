@@ -50,7 +50,7 @@ include("dbconnect.php");
    <il> > </il>
    <il><a id="breadcrumbs" href="bulletinlist.php">BULLETIN BOARD</a><il>
    </ul>
-<p><a id="registerlink" href="bulletin.php">Write a Bulletin!</a></p>
+<p><a id="registerlink" href="bulletin.php">WRITE A BULLETIN!</a></p>
 <?php
 echo "<table>";
 $sql = "SELECT * FROM bulletin";
