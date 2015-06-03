@@ -315,10 +315,10 @@ div#bodycontentAU {
 	width: 1217px;
 	margin: 0 auto;
 	background-color: #353535;
-	height: 1790px;
+	height: 2000px;
 	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
 	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
-	padding-bottom: 60px;
+	padding-bottom: 0px;
 }
 
 div#bodycontentAU hr {
@@ -326,7 +326,7 @@ div#bodycontentAU hr {
 	width: 1222px;
 	height: 7px;
 	margin-left: -5px;
-	margin-top: 1843px;
+	margin-top: 1992px;
 	background-color: #FF6E00;
 	border-color: #FF6E00;
 	border-width: 0px;
@@ -335,7 +335,7 @@ div#bodycontentAU hr {
 div#contentAU {
 	float: left;
 	width: 1181px;
-	height: 1780px;
+	height: 1950px;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 0px;
