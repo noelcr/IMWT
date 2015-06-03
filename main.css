@@ -1,235 +1,524 @@
-#artistForm tr td:nth-child(1) {
-    text-align: right;
-}
-#artistForm tr:nth-child(5) td {
-    text-align: center;
+@charset "utf-8";
+/* CSS Document */
+
+a#breadcrumbs,il {
+	color: #FFFFFF;
 }
 
-.featured {
-    background-color: #ccc;
+body {
+	background: url(images/background2.jpg) repeat fixed 100%;
 }
-
-textarea#info {
-	width: 300px;
-	height: 100px;
-}
-
-img.artist {
-	max-width: 128px;
-}
-a{
-	text-decoration: none;
-	color: #F9F7F7;
-}
-a#breadcrumbs{
-	color: #000000;
-}
-div#aboutus01{
-	float: left;
-}
-div#bodywrapper{
-	float: left;
-	position: absolute;
-	display: block;
-	margin-left: 12.5%;
-	margin-right: 12.5%;
-	min-height: 100%;
-}
-div#contactus01{
-	float: left;
-	margin: 10px 0 0 0;
-	width: auto;
-	margin-right: 25px;
-	margin-button: 50px;
-}
-div#contactus02{
-	margin: 10px 0 0 0;
-	width: 20%;
-	margin-left: 25px;
-	margin-botton:50px;
-}
-#footer{
-	position: fixed;
-	bottom: 0px;
+   
+div#header{
 	width: 100%;
-	height: auto;
-	background-color: #444443;
-	left: 0px;
-	right: 0px;
-	margin-bottom: 0px;
-}
-#footercontainer{
-	margin-left: 30%;
-	margin-right: 30%;
-}
-#footerlinks01 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	margin: auto;
-	float: left;
-	display: block;
-	text-align: center;
-	width: 100px;
-	padding: 12px;
+	height: 250px;
+	background-color: #353535;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding-bottom: 0px;
+	margin-bottom: 100px;
 }
 
-#footerlinks02 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	margin: auto;
-	float: left;
-	display: block;
+div#wrapper {
+	width: 1300px;
+	height: 180px;
+	margin: 0 auto;
 	text-align: center;
-	width: 100px;
-	padding: 12px;
 }
 
-#footerlinks03 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	margin: auto;
-	float: left;
-	display: block;
-	text-align: center;
-	width: 100px;
-	padding: 12px;
+#tcmclogo,#memberbutton,#loginbutton,#fblogo,#tagline1,#tagline2,#tagline3 {
+	float: left;	
 }
 
-#footerlinks04 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	margin: auto;
-	float: left;
-	display: block;
-	text-align: center;
-	width: 100px;
-	padding: 12px;
+div#tcmclogo {
+	margin-top: 10px;
+	margin-left: 50px;
 }
 
-#footerlinks05 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	margin: auto;
-	float: left;
-	display: block;
-	text-align: center;
-	width: 100px;
-	padding: 12px;
+div#memberbutton {
+	margin-left: 72px;
+	margin-top: 120px;
 }
 
-#footerlinks06 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	margin: auto;
-	float: left;
-	display: block;
-	text-align: center;
-	width: 100px;
-	padding: 12px;
+div#loginbutton {
+	margin-left: 110px;
+	margin-top: 120px;
 }
 
-#footerlinks a:link{
+div#fblogo {
+	margin-left: 55px;
+	margin-top: 25px;
+}
+
+div#tagline1 {
+	width: 600px;
+	height: 20px;
+	margin-left: 420px;
+	margin-top: -150px;
+	font-size: 20px;
+}
+
+div#tagline2 {
+	width: 400px;
+	height: 20px;
+	margin-left: 315px;
+	margin-top: -85px;
+}
+
+div#tagline3 {
+	width: 200px;
+	height: 20px;
+	margin-left: 820px;
+	margin-top: -85px;
+}
+
+div#headercolor {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	opacity: ;
+	background-color: #FF6E00;
+}
+
+div#header i {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+}
+
+div#boxcontent { /*for index.html only*/
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 800px;
+	padding-top: 20px;
+	padding-left: 5px;
+}
+
+div#boxcontent hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 793px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
+div#index { /*for index.html only*/
+	float: left;
+	width: 389px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+div#bodycontentART {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 1000px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#bodycontentART hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 993px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
+div#contentART {
+	float: left;
+	width: 1181px;
+	height: 970px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#bodycontentART img {
+	float:left	
+	height: 165px;
+	width: 1164px;
+	margin-left: 8px;
+}
+
+div#bodycontentEVNT {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 800px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#bodycontentEVNT hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 793px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
+div#contentEVNT {
+	float: left;
+	width: 1181px;
+	height: 770px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+div#bodycontentBB {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 800px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#bodycontentBB hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 793px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
+div#contentBB {
+	float: left;
+	width: 1181px;
+	height: 770px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#bodycontentBB img {
+	float:left	
+	height: 165px;
+	width: 1164px;
+	margin-left: 8px;
+}
+
+div#bodycontentSPO {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 865px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#bodycontentSPO hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 858px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
+div#contentSPO {
+	float: left;
+	width: 1181px;
+	height: 833px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#SPOTCC {
+	height: 180px;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+#contentSPO hr {
+	position: absolute;
+	width: 850px;
+	height: 2px;
+	margin-top: 14px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+	margin-left: 250px;
+}
+
+#SPOQLD {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 150px;
+	margin-top: 30px;
+	
+}
+
+#bodycontentSPO img {
+	float:left	
+	height: 165px;
+	width: 1164px;
+	margin-left: 8px;
+}
+
+div#bodycontentCU {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 850px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+}
+
+#bodycontentCU hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 843px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
+div#contentCU {
+	float: left;
+	width: 1181px;
+	height: 820px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#bodycontentCU img {
+	float:left	
+	height: 165px;
+	width: 1164px;
+	margin-left: 8px;
+}
+
+div#bodycontentAU {
+	width: 1217px;
+	margin: 0 auto;
+	background-color: #353535;
+	height: 2000px;
+	padding-top: 20px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-left: 5px; /*Don't change padding or hr tag will go out of line - Dean*/
+	padding-bottom: 0px;
+}
+
+div#bodycontentAU hr {
+	position: absolute;
+	width: 1222px;
+	height: 7px;
+	margin-left: -5px;
+	margin-top: 1992px;
+	background-color: #FF6E00;
+	border-color: #FF6E00;
+	border-width: 0px;
+}
+
+div#contentAU {
+	float: left;
+	width: 1181px;
+	height: 1950px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+}
+
+div#copyright {
+	font-size: 11px;
+	font-weight: bold;
+	border: none;
+	color: #777;
+	float: left;
+	padding-top: 38px;
+}
+
+div#footer {
+	padding-top: 20px;
+	clear: both;
+	background-color: #353535;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	height: 290px;
+}
+
+.footerwrap {
+	width: 1217px;
+	padding: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	text-align: left;
+	box-sizing: content-box;
+	height: 250px;
+}
+
+div#footer hr {
+	border: 0;
+	border-top: 2px solid #FFFFFF;
+	width: 165px;
+}
+
+div#footer-menu a {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+div#footer-sites {
+	clear: both;
+	width: 1217px;
+	margin-bottom: 30px;
+}
+
+div#footer th,#footer td {
+	padding: 0 15px 0 0;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: .9em;
+}
+
+div#footer th {
+	color: #777;
+	padding-bottom: 1em;
+	line-height: 1.3;
+	text-align: center;
+	margin-left: 97px;
+}
+
+div#footer td {
+	vertical-align: top;
+}
+
+div#footer li {
+	list-style: none;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+	text-transform: none;
+	font-size: 1em;
+}
+
+div#footer ol {
+	margin: 0;
+	text-align: left;
+}
+
+div#footer-sites a:link{
 	color: white;
 	text-decoration: none;	
 }
-#footerlinks a:visited{
+div#footer-sites a:visited{
 	color: white;
 }
-#footerlinks a:hover{
+div#footer-sites a:hover{
 	color: #B9B9B9;
 }
-#footerlinks a:active{
+div#footer-sites a:active{
 	color: #6073BF;
 }
-#header{
-	float: center;
-	margin-left: 12.5%;
-	margin-right: 12.5%;
-}
-#header01{
-	float: left;
-	margin: 10px 0 0 0;
-}
-#header02{
-	float: center;
-	margin: 10px 0 0 0;
-	margin-left: 20%;
-	margin-right: 30%;
-	text-align: center;
-}
-#header03{
-	margin: 10px 0 0 0;
-	margin-left: 10%;
-	margin-right: 50%;
-	text-align: center;
-}
-#header04{
-    float:right;
-    position: relative;
-    top: -63px;
-}
-#header05{
-	float: right;
-	margin: -115px 0 0 10px;
-	margin-right: -100%
-}
-#index01{
-    float: left;
-	position: absolute;
-	display: block;
-	min-height: 100%;
-}
-#index02{
-	float: left;
-	display: block;
-	margin: 1.5%;
-    width: 350px;
-	padding: 12px;
-}
-il#breadcrumps{
 
-}
-#sponsors01{
-	display: block;
-    float: left;
-	margin: 10px 0 0 0;
-}
-#sponsors02{
-	display: block;
+div#footer-menu {
 	float: left;
-	width: 20%;
-	margin: 10px 0 0 0;
-	margin: 24px;
 }
-#sponsors03{
+
+fieldset {
+    border: 0;
+}
+
+h1 {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+h2 {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+img#banner{
+	width: 1164px;
+	height: 164px;
+}
+
+img#indexbutton{
+	height=: 344px; 
+	width=: 391px;
+}
+
+img#sponsors1 {
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 150px; 
+	width: 150px;
 	float: left;
-	width: 80%;
-	margin: 10px 0 0 0;
-	margin-left: 24px;
-	margin-right: 24px;
 }
-h1{
-	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-	font-weight:bold;
-	font-size:36px;
-	color:black;
-	margin:24px;
+
+img#sponsors2 {
+	height: 150px;
+	width: 250px;
+	float: left;
+	margin-left: -3px;
 }
-hr{
-    border: 0;
-    border-top: 2px solid #FFFFFF;
+
+ol {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 2;
+	list-style-type: none;
+	padding: 0;
+	color: #FFFFFF;
 }
-hr#black{
-    border: 0;
-    border-top: 2px solid #000000;
-}
+
 p{
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	margin-left: 24px;
-	margin-right: 24px;
 	font-size: 18px;
-	line-height: 2;
+	color: #FFFFFF;
+	word-wrap: break-word;
+	width: 925px;
 }
-ul#breadcrumbs{
+
+table {
+
+}
+
+td{
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	margin-left: 24px;
-	margin-right: 24px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+a#registerlink{
+	color: #FFFFFF;
+}
+
+ul#breadcrumbs {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 2;
-	padding: 0;
     list-style-type: none;
+	padding: 0;
+}
+img#contact{
+	width: 500px;
+
 }
