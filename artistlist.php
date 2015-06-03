@@ -5,7 +5,7 @@ include("dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
-<link href="mainnew.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
 <title>ARTIST - Townsville Community Music Centre</title> 
 </head>
   <div id="header">

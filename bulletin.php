@@ -7,7 +7,7 @@ include("dbconnect.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WRITE A BULLETIN - Townsville Community Music Centre</title>
-    <link rel="stylesheet" href="mainnew.css">
+    <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div id="header">

@@ -5,7 +5,7 @@ include("dbconnectmembers.php")
 <html>
 <head>
 <meta charset="utf-8">
-<link href="mainnew.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
 <title>BECOME A MEMBER - Townsville Community Music Centre</title>
 </head>
 
