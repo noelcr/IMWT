@@ -60,7 +60,7 @@ if ($_REQUEST['submit'] == "X")
    <div id="contentAU">
    <img src="images/eventsbanner.png" alt="">
    <ul id="breadcrumbs">
-   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
+   <il><a id="breadcrumbs" href="index.html">HOME</a></il>
    <il> > </il>
    <il><a id="breadcrumbs" href="eventslist.php">EVENTS</a><il>
    </ul>

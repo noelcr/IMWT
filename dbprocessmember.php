@@ -55,7 +55,7 @@ if ($_REQUEST['submit'] == "X")
    <div id="contentSPO">
    <img src="images/signinbanner.png" alt="">
    <ul id="breadcrumbs">
-   <il><a id="breadcrumbs" href="indexnew.html">HOME</a></il>
+   <il><a id="breadcrumbs" href="index.html">HOME</a></il>
    <il> > </il>
    <il><a id="breadcrumbs" href="becomemember.php">BECOME A MEMBER</a><il>
    </ul>
